@@ -1,0 +1,56 @@
+:root {
+  --ff-main: 'Open Sans', sans-serif;
+
+  --clr-white: #FFF;
+  --clr-red: #E21119;
+  --clr-black: #000000;
+  --clr-purple: #9917C6;
+  --clr-200: #E7E7E7;
+  --clr-300: hsla(0, 0%, 89%, 1);
+  --clr-400: #D8D8D8;
+  --shadow-block: 0px -8px 34px 0px hsla(0, 0%, 0%, 0.3);
+  --bg-header-300: #131415;
+
+  // Spacing //
+  --10-spc: .625rem;
+  --15-spc: 0.9375rem;
+  --33-spc: 2.0625rem;
+  --42-spc: 2.625rem;
+  --61-spc: 3.8125rem;
+  --95-spc: 5.9375rem;
+}
+
+._container {
+  max-width: 75em;
+  margin-inline: auto;
+  width: 100%;
+  padding: 0 clamp(12.5px, 1rem, 1.25rem);
+}
+
+._default-btn {
+  background-color: var(--clr-red);
+  display: inline-flex;
+  text-align: center;
+  color: var(--clr-white);
+  justify-content: center;
+  align-items: center;
+  padding: 14px 5px;
+  max-width: 15.875em;
+  font-size: max(1vw, .9375rem);
+  font-weight: 300;
+  font-style: italic;
+  width: 100%;
+  border-radius: 5px;
+  transition: filter .1s ease-in-out;
+  &:hover {
+    filter: brightness(95%);
+  }
+  &:active {
+    filter: brightness(90%);
+  }
+}
+
+
+
+
+
