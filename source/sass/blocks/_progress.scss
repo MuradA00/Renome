@@ -1,0 +1,33 @@
+.progress {
+  padding-bottom: max(5.25vw, 40px);
+  &__body {
+    display: flex;
+    transform: translateY(-40px);
+    flex-direction: column;
+    grid-gap: 17px;
+    justify-content: center;
+  }
+  &__top,
+  .progress__bottom {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  &__top {
+    width: 876px;
+    margin-left: 92px;
+  }
+  &__bottom {
+    width: 909px;
+    margin-left: 430px;
+  }
+  &__item {
+    font-size: clamp(2rem, 3.75vw, 3.75rem);
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    span {
+      font-size: clamp(1rem, 1.5vw, 1.5rem);
+    }
+  }
+}
