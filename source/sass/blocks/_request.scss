@@ -1,0 +1,100 @@
+.request {
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__heading {
+    font-size: clamp(1.25rem, 2.25vw, 2.25rem);
+    font-weight: 300;
+    font-style: italic;
+    max-width: 25.5625rem;
+  }
+  &__info {
+    padding: clamp(1.5rem, 6.8vw, 6.8rem) clamp(.3rem, 10vw, 10rem) clamp(1.5rem, 6.8vw, 6.8rem) clamp(.3rem, 5.75vw, 5.75rem);
+    @include max-w($tab-size) {
+      padding: clamp(1.5rem, 6.8vw, 6.8rem) 10px clamp(1.5rem, 6.8vw, 6.8rem) 10px;
+    }
+  }
+  &__subtitle {
+    margin-top: max(1.93vw, 1rem);
+    max-width: 25.5em;
+    font-size: clamp(.8rem, 1vw, 1rem);
+  }
+  &__inputs {
+    margin-top: 15px;
+    display: grid;
+    grid-gap: max(1.93vw, 15px);
+  }
+  &__button {
+    margin-top: max(2.56vw, 1.25rem);
+  }
+  &__input {
+    background: transparent;
+    padding-bottom: 9px;
+    border-bottom: 1px solid var(--clr-black);
+    max-width: 28.875rem;
+    &::placeholder {
+      color: var(--clr-black);
+    }
+  }
+  &__image {
+    // width: 100%;
+    img,
+    picture {
+      height: 100%;
+      display: block;
+    }
+    position: relative;
+    &::before {
+      @include psevdo;
+      width: max(2.1vw, 25px);
+      background-color: var(--clr-red);
+      height: 100%;
+      right: 0;
+    }
+  }
+  &__name-block {
+    position: absolute;
+    bottom: 54px;
+    right: 40px;
+    background-color: var(--clr-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px max(3vw, 1.5rem);
+  }
+  &__inner {
+    font-weight: 300;
+    font-style: italic;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+
+    span {
+      font-style: normal;
+      font-size: max(1.125vw, .9rem);
+    }
+  }
+}
+
+@include max-w(37.5em) {
+  .request {
+    &__body {
+      display: flex;
+      flex-direction: column;
+    }
+    &__image {
+      height: 25.75em;
+      overflow: hidden;
+    }
+    &__name-block {
+      right: 25px;
+      bottom: 15px;
+    }
+    &__image {
+      picture,
+      img {
+        width: 100%;
+
+      }
+    }
+  }
+}

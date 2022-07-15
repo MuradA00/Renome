@@ -1,0 +1,56 @@
+.journal {
+  padding-bottom: 35px;
+  &__pagination {
+    background-color: var(--clr-purple);
+  }
+
+  &__wrapper {
+    margin-top: 40px;
+
+  }
+  &__inner {
+    // display: grid;
+    // justify-content: center;
+    // max-width: 90em;
+    // overflow: hidden;
+
+  }
+}
+
+.journal__btn-prev,
+.journal__btn-next {
+  cursor: pointer;
+}
+
+.news-list {
+  display: flex;
+  grid-gap: 2.625rem;
+
+  &__item {
+    flex: 1 1 33.333%;
+    max-width: 28.375rem;
+  }
+  &__inner {
+    max-width: 24.375rem;
+    margin: 43px 20px 0;
+  }
+  &__heading {
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(1.125rem, 1.5vw, 1.5rem);
+    min-height: 6.25rem;
+  }
+  &__descr {
+    font-size: clamp(13px, .875vw, 14px);
+    margin-top: 12px;
+    min-height: 5.625rem;
+  }
+  &__link {
+    color: var(--clr-red);
+    font-style: italic;
+    font-size: clamp(.9rem, 1.125vw, 1.125rem);
+    @include al-flex;
+    grid-gap: 4px;
+    margin-top: 25px;
+  }
+}

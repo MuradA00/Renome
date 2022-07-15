@@ -42,5 +42,21 @@
 //   })
 // }
 
+const newsRow = new Swiper('.journal__inner', {
+  // Optional parameters
+  slidesPerView: 'auto',
 
+  // slidesPerGroup: 1,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
 
+  // Navigation arrows
+  navigation: {
+    nextEl: '.journal__btn-next',
+    prevEl: '.journal__btn-prev',
+  },
+
+  // And if we need scrollbar
+});

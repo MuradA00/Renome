@@ -46,6 +46,9 @@
         stroke: 1px solid red;
       }
     }
+    &:hover span {
+      width: 30%;
+    }
     @include al-flex;
     grid-gap: 11px;
     margin-top: clamp(30px, 4.4375vw, 4.4375rem);
@@ -54,6 +57,7 @@
       background-color: var(--clr-red);
       height: 1px;
       width: 100%;
+      transition: all .5s ease;
     }
   }
   &__play-span {

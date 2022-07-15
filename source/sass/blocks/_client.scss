@@ -1,0 +1,63 @@
+.client {
+  &__pagination {
+    background-color: var(--clr-red);
+    @include max-w($tab-size) {
+      flex-direction: column;
+
+    }
+  }
+  &__buttons {
+    margin-left: auto;
+    img {
+      width: 80px;
+    }
+  }
+}
+
+.pagination {
+  padding: clamp(1.5rem, 9.75vw, 9.75rem)  max(6.25vw, 10px) max(2.56vw, 1.25rem) max(6.25vw, 10px);
+  @include al-flex;
+  justify-content: space-between;
+}
+
+.pag-buttons {
+  display: flex;
+  grid-gap: max(3.8125vw, .7rem);
+}
+
+.pag-name {
+  color: var(--clr-white);
+  font-style: italic;
+  font-size: clamp(1.375rem, 2.25vw, 2.25rem);
+  @include max-w($tab-size) {
+    margin-right: auto;
+    margin-bottom: 3rem;
+  }
+}
+
+.sponsor-list {
+  padding: clamp(2.5rem, 4.75vw, 4.75rem) 0 clamp(2.5rem, 7.875vw, 7.875rem);
+  @include al-flex;
+  grid-gap: 1rem;
+  justify-content: space-between;
+  max-width: 75em;
+  margin-inline: auto;
+  @include max-w($tab-size) {
+    flex-wrap: nowrap;
+    grid-gap: .5rem;
+    overflow-y: scroll;
+  }
+  &__item {
+    filter: grayscale(100%);
+    transition: .2s ease-in-out;
+    @include max-w($tab-size) {
+      flex: 0 0 auto;
+      &:last-child {
+        margin-left: 1.5rem;
+      }
+    }
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+}
