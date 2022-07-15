@@ -1,0 +1,12 @@
+.social {
+  @include al-flex;
+  min-width: 11.5em;
+  justify-content: space-between;
+  &__link {
+    fill: #fff;
+    transition: .2s ease-in;
+    &:hover {
+      fill: var(--clr-red);
+    }
+  }
+}

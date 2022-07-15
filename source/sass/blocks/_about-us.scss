@@ -1,0 +1,37 @@
+.about {
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 21.9rem;
+    @include max-w($tab-size) {
+      grid-template-columns: 100%;
+    }
+  }
+  &__red,
+  .about__quality {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.125rem;
+  }
+  &__red {
+    background-color: var(--clr-red);
+  }
+  &__definition,
+  .about__quality-inner {
+    p {
+      font-size: clamp(1rem, 1.5vw, 1.5rem);
+      font-style: italic;
+      line-height: 133%;
+    }
+  }
+  &__definition {
+    max-width: 33.75rem;
+    color: var(--clr-white);
+  }
+  &__quality-inner {
+    p {
+      color: var(--clr-black);
+    }
+  }
+}

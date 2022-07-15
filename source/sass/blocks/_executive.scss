@@ -1,0 +1,95 @@
+.executive {
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+  &__image {
+    display: flex;
+    justify-content: center;
+    background-color: var(--clr-300);
+    padding: max(4.75vw, 2rem) clamp(2rem, 5.5vw, 7.5rem) 0;
+    img {
+      object-fit: unset;
+    }
+  }
+  &__info {
+    padding: clamp(2.5rem, 9.625vw, 9.625rem) clamp(.5rem, 4.5375vw, 4.9375rem) clamp(2rem, 6.125vw, 6.125rem);
+    max-width: 45em;
+  }
+  &__name {
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(1.225rem, 1.5vw, 1.5rem);
+  }
+  &__role {
+    margin-top: 10px;
+    font-size: clamp(.9rem, 1vw, 1rem);
+  }
+  &__descr {
+    margin-top: clamp(1rem, 2.375vw, 2.375rem);
+    max-width: 35.6rem;
+    font-size: 14px;
+    line-height: 180%;
+  }
+  &__icon {
+    height: 31px;
+    svg {
+      fill: transparent;
+      transition: .2s ;
+    }
+  }
+  &__watch {
+    &:hover {
+      svg {
+        fill: red;
+        stroke: 1px solid red;
+      }
+    }
+    @include al-flex;
+    grid-gap: 11px;
+    margin-top: clamp(30px, 4.4375vw, 4.4375rem);
+    span {
+      display: block;
+      background-color: var(--clr-red);
+      height: 1px;
+      width: 100%;
+    }
+  }
+  &__play-span {
+    font-size: max(1vw, .9rem);
+    color: var(--clr-red);
+    white-space: nowrap;
+  }
+}
+
+@include max-w(62.5em) {
+  .executive {
+    &__body {
+        display: flex;
+        flex-direction: column;
+    }
+    &__info {
+      max-width: 100%;
+    }
+    &__descr {
+      max-width: 100%;
+    }
+    &__image {
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@include max-w($mob-size) {
+  .executive {
+    &__image {
+      picture,
+      img {
+        width: max(20vw, 13.5rem);
+      }
+    }
+  }
+}

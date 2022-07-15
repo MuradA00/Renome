@@ -9,8 +9,8 @@
   background-repeat: no-repeat;
   background-position: center;
   color: var(--clr-white);
+  position: relative;
   &__body {
-
     display: flex;
     justify-content: space-between;
     @include max-w($tab-size) {
@@ -37,6 +37,31 @@
     padding: 35px 0px 14px;
     @include max-w($tab-size) {
       width: max(22.5vw, 15rem);
+    }
+  }
+  &__bottom {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    bottom: calc(0px + 39px);
+  }
+  &__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__bottom-social {
+    padding-right: 32px;
+    min-height: 24px;
+    margin-top: auto;
+    height: 100%;
+  }
+  &__bottom-scroll {
+    transition: transform 300ms ease-in;
+    &:hover {
+      transform: translateY(10px);
+    }
+    svg {
+      fill: transparent;
     }
   }
 }

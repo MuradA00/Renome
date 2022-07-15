@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   padding: 20px max(2vw, .4rem);
+  z-index: 999;
   background-color: hsla(210, 5%, 8%, .17);
   &__body {
     @include al-flex;
