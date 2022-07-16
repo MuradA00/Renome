@@ -66,3 +66,32 @@
   75% { transform: rotate(-5deg); }
   100% { transform: rotate(0deg); }
 }
+
+@include max-w($tab-size) {
+  .header {
+    .burger {
+      span {
+        &:nth-child(1) {
+          width: 36px;
+          margin-left: auto;
+        }
+        &:nth-child(2) {
+          width: 49px;
+
+        }
+        &:nth-child(3) {
+          width: 25px;
+          margin-left: auto;
+        }
+      }
+    }
+    &__left {
+      width: 100%;
+      justify-content: space-between;
+      grid-gap: 0;
+    }
+    &__right {
+      display: none;
+    }
+  }
+}

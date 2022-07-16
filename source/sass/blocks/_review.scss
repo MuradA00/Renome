@@ -9,6 +9,7 @@
     }
   }
   &__client {
+    width: 100%;
     background-color: var(--clr-300);
     padding: clamp(1.5rem, 4.5625vw, 4.5625rem) clamp(10px, 14.375vw, 14.375rem) clamp(1.5rem, 10vw, 10rem) clamp(10px, 7.25vw, 7.25rem);
     @include max-w($tab-size) {
@@ -17,12 +18,13 @@
   }
   &__info {
     margin: 0 clamp(10px, 4vw, 4rem) 0 clamp(10px, 6vw, 6rem);
-    font-size: 14px;
+
     line-height: 185%;
     max-width: 35.1875rem;
-    width: 100%;
+    max-width: 100%;
     p {
       width: 100%;
+      font-size: 14px;
       @include max-w($tab-size) {
         font-size: 12px;
         padding: 1.5rem 0;

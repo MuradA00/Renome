@@ -26,7 +26,7 @@
     max-width: 20.875em;
   }
   &__contact {
-display: flex;
+  display: flex;
   align-items: flex-end;
   max-width: 82.125rem;
   }
@@ -54,7 +54,6 @@ display: flex;
   }
   .social {
     margin-left: 33px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,4 +88,29 @@ display: flex;
   font-size: .875rem;
   line-height: 185%;
   opacity: 0.54;
+}
+
+@include max-w(78.125em) {
+  .footer {
+    &__contact {
+      flex-wrap: wrap;
+      grid-gap: 1.5rem;
+    }
+  }
+}
+
+@include max-w(50em) {
+  .footer {
+    &__options {
+      flex-direction: column;
+      margin-left: 0;
+      grid-gap: 2rem;
+    }
+    &__contact {
+      margin-top: 1.5rem;
+    }
+    &__btn {
+      margin-left: 0;
+    }
+  }
 }

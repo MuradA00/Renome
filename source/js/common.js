@@ -44,10 +44,13 @@
 
 const newsRow = new Swiper('.journal__inner', {
   // Optional parameters
-  slidesPerView: 'auto',
+  slidesPerView: 1,
 
-  // slidesPerGroup: 1,
-  // If we need pagination
+  breakpoints: {
+    800: {
+      slidesPerView: 3
+    }
+  },
   pagination: {
     el: '.swiper-pagination',
   },

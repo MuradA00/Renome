@@ -1,5 +1,10 @@
 .progress {
   padding-bottom: max(5.25vw, 40px);
+  &__container {
+    max-width: 90em;
+    margin-inline: auto;
+    padding: 0 2rem;
+  }
   &__body {
     display: flex;
     transform: translateY(-40px);
@@ -14,12 +19,12 @@
 
   }
   &__top {
-    width: 876px;
+    max-width: 876px;
     margin-left: 92px;
   }
   &__bottom {
-    width: 909px;
-    margin-left: 430px;
+    max-width: max(56.8vw, 25em);
+    margin-left: max(26.875vw, 5rem);
   }
   &__item {
     font-size: clamp(2rem, 3.75vw, 3.75rem);
@@ -28,6 +33,31 @@
     flex-direction: column;
     span {
       font-size: clamp(1rem, 1.5vw, 1.5rem);
+    }
+  }
+}
+
+@include max-w($tab-size) {
+  .progress {
+    &__top,
+    .progress__bottom {
+      flex-direction: column;
+      margin-left: 0;
+      max-width: 100%;
+    }
+    &__item {
+      &:nth-child(1) {
+        align-items: flex-start;
+      }
+      &:nth-child(2) {
+        align-items: flex-end;
+      }
+      &:nth-child(3) {
+        align-items: flex-start;
+      }
+      &:nth-child(4) {
+        align-items: flex-end;
+      }
     }
   }
 }
