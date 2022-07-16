@@ -42,6 +42,8 @@
 //   })
 // }
 
+// AOS.init();
+
 const newsRow = new Swiper('.journal__inner', {
   // Optional parameters
   slidesPerView: 1,

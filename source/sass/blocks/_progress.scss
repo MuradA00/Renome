@@ -45,6 +45,9 @@
       margin-left: 0;
       max-width: 100%;
     }
+    &__body {
+      transform: translateY(0);
+    }
     &__item {
       &:nth-child(1) {
         align-items: flex-start;
