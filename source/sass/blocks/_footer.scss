@@ -45,8 +45,8 @@
     width: 176px;
   }
   &__copy-left {
-    padding: 24px 48px;
-    font-size: 14px;
+    padding: max(1.5vw, 1rem) max(3vw, 1rem);
+    font-size: max(0.875vw, .6rem);
     color: hsla(0, 0%, 0%, 1);
     opacity: .5;
     max-width: 1530px;

@@ -9,7 +9,9 @@
   &__buttons {
     margin-left: auto;
     img {
-      width: 80px;
+      @include max-w($mob-size) {
+        width: 60px;
+      }
     }
   }
 }

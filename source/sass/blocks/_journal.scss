@@ -20,6 +20,11 @@
 .journal__btn-prev,
 .journal__btn-next {
   cursor: pointer;
+  @include max-w($mob-size) {
+    img {
+      width: 60px;
+    }
+  }
 }
 
 .news-list {
@@ -52,5 +57,51 @@
     @include al-flex;
     grid-gap: 4px;
     margin-top: 25px;
+  }
+}
+
+@include max-w($tab-size) {
+  .journal {
+    &__pagination {
+      flex-direction: column;
+    }
+    &__buttons {
+      margin-left: auto;
+    }
+
+  }
+  .pag-name {
+    margin-bottom: 3.75rem;
+  }
+}
+
+@include max-w(45em) {
+  .journal {
+    &__wrapper {
+      margin-top: 21px;
+    }
+  }
+  .news-list {
+    grid-gap: 0;
+
+    &__item {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+    &__heading {
+      min-height: 100%;
+    }
+    &__inner {
+      max-width: 100%;
+    }
+    &__image {
+      img,
+      picture {
+        width: 100%;
+      }
+    }
+    &__link {
+      width: 60px;
+    }
   }
 }
