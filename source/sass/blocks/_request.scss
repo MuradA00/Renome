@@ -2,6 +2,7 @@
   &__body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
   }
   &__heading {
     font-size: clamp(1.25rem, 2.25vw, 2.25rem);
@@ -26,7 +27,37 @@
     grid-gap: max(1.93vw, 15px);
   }
   &__button {
-    margin-top: max(2.56vw, 1.25rem);
+    margin-top: 25px;
+  }
+  &__notif {
+    margin-top: 25px;
+    display: flex;
+    grid-gap: 11px;
+    svg {
+      fill: transparent;
+    }
+  }
+  &__checkbox {
+    margin-top: 5px;
+    flex: 0 0 auto;
+    width: 20px;
+    height: 20px;
+    outline: 2px solid var(--clr-black);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    svg {
+      transform: scale(0);
+      transition: transform .2s ease-in-out;
+    }
+  }
+  &__notif-text {
+    max-width: 26.9rem;
+    p {
+      opacity: .5;
+      font-size: max(.75vw, .625rem);
+    }
   }
   &__input {
     background: transparent;
@@ -41,8 +72,6 @@
     }
   }
   &__image {
-    // width: 100%;
-    max-height: 40rem;
     overflow: hidden;
     @include max-w(70.5em) {
       height: 100%;
@@ -77,20 +106,24 @@
   &__inner {
     font-weight: 300;
     font-style: italic;
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
-
+    font-size: clamp(.875rem, 1.5vw, 1.5rem);
     span {
       font-style: normal;
-      font-size: max(1.125vw, .9rem);
+      font-size: max(1.125vw, .75rem);
     }
   }
 }
 
-@include max-w(37.5em) {
+.--check-visible {
+  transform: scale(1) !important;
+}
+
+@include max-w(40.5em) {
   .request {
     &__body {
       display: flex;
       flex-direction: column;
+      align-items: unset;
     }
     &__image {
       height: 25.75em;

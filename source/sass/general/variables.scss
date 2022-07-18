@@ -8,6 +8,12 @@
   --clr-200: #E7E7E7;
   --clr-300: hsla(0, 0%, 89%, 1);
   --clr-400: #D8D8D8;
+  ---grn-text: #26AD50;
+  --light-grn-text: #00BEA2;
+  --orange-clr: #FC7630;
+  --red-text-clr: #F03B36;
+  --blue-clr: #366AF3;
+
   --shadow-block: 0px -8px 34px 0px hsla(0, 0%, 0%, 0.3);
   --bg-header-300: #131415;
 
@@ -41,16 +47,30 @@
   font-style: italic;
   width: 100%;
   border-radius: 5px;
-  transition: filter .1s ease-in-out;
+  transition: all .1s ease-in-out;
   &:hover {
-    filter: brightness(95%);
+    background-color: #FE363E;
   }
   &:active {
-    filter: brightness(90%);
+    background-color: #BB080F;
   }
 }
 
+._default-btn-white {
+  color: var(--clr-black);
+  background-color: var(--clr-white);
+  &:hover {
+    background-color: #EDEDED;
+  }
+  &:active {
+    background-color: #D2D2D2;
+  }
+}
 
-
-
+._cursive-heading {
+  color: var(--clr-white);
+  font-size: clamp(1.625rem, 2.25vw, 2.25rem);
+  font-style: italic;
+  font-weight: 300;
+}
 

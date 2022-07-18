@@ -27,12 +27,13 @@
     margin-left: max(26.875vw, 5rem);
   }
   &__item {
-    font-size: clamp(2rem, 3.75vw, 3.75rem);
+    font-size: clamp(3rem, 3.75vw, 3.75rem);
     font-weight: 700;
     display: flex;
     flex-direction: column;
     span {
       font-size: clamp(1rem, 1.5vw, 1.5rem);
+      font-weight: 400;
     }
   }
 }
@@ -46,9 +47,10 @@
       max-width: 100%;
     }
     &__body {
-      transform: translateY(0);
+      transform: translateY(-5%);
     }
     &__item {
+      line-height: 70%;
       &:nth-child(1) {
         align-items: flex-start;
       }

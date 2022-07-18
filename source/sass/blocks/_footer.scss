@@ -60,7 +60,13 @@
     min-width: 11.5rem;
     max-width: 11.5rem;
     &__link {
-      fill: #000;
+      svg {
+        fill: #000;
+        transition: fill .2s ease-in-out;
+        &:hover {
+          fill: var(--clr-red);
+        }
+      }
     }
   }
   &__phone {
@@ -111,6 +117,15 @@
     }
     &__btn {
       margin-left: 0;
+
+    }
+  }
+}
+
+@include max-w($mob-size) {
+  .footer {
+    &__btn {
+      max-width: 100%;
     }
   }
 }

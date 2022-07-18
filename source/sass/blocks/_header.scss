@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px max(2vw, .4rem);
+  padding: max(1.25vw, 0.75rem) max(2vw, .9375rem) max(1.25vw, .5rem);
   z-index: 999;
   background-color: hsla(210, 5%, 8%, .17);
   &__body {
@@ -38,6 +38,9 @@
     font-style: italic;
     font-size: max(1.125vw, .9rem);
     font-weight: 300;
+  }
+  &__logo {
+    width: max(11.6875vw, 7.5625rem);
   }
 }
 
@@ -92,6 +95,19 @@
     }
     &__right {
       display: none;
+    }
+  }
+}
+
+._header-white {
+  position: relative;
+  background-color: #fff;
+  .header__call {
+    color: var(--clr-black);
+  }
+  .burger {
+    span {
+      background-color: var(--clr-black);
     }
   }
 }
