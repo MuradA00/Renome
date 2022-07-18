@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('_head.html',{})
-
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="Description" content="default">
+    <title>Контур СКБ</title>
+    <script src="js/picturefill.min.js" async="async"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
 <body>
-
   @@include('_header-white.html',{})
-
   <main>
+
   @@include('_menu.html',{})
   @@include('_contur.html',{})
   @@include('_request.html',{})
+
   </main>
-
-
   @@include('_footer.html',{})
   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
   <script src="js/burger.js"></script>
+  <script src="js/checkbox.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/common.js"></script>
 </body>
-
 </html>

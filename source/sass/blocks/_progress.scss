@@ -3,7 +3,7 @@
   &__container {
     max-width: 90em;
     margin-inline: auto;
-    padding: 0 2rem;
+    padding: 0 max(2vw, .9375rem);
   }
   &__body {
     display: flex;

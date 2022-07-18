@@ -63,3 +63,12 @@
     }
   }
 }
+
+@include max-w($mob-size) {
+  .sponsor-list {
+    overflow-y: scroll !important;
+    &__item {
+      flex: 0 0 auto !important;
+    }
+  }
+}

@@ -1,21 +1,22 @@
 .nav {
   background-color: var(--clr-200);
+  border-radius: 35px 35px 0px 0px;
   &__link {
     background-color: var(--clr-200);
     display: block;
     width: 100%;
     padding: clamp(33px, 3vw, 48px) clamp(.8rem, 5.625vw, 5.625rem) 33px;
     box-shadow: var(--shadow-block);
-    border-collapse: collapse;
+    border-radius: 35px 35px 0px 0px;
+    background-color: var(--clr-200);
     text-transform: uppercase;
     font-size: clamp(1.125rem, 2.25vw, 2.25rem);
     font-weight: 500;
     @include al-flex;
     justify-content: space-between;
-    transition: .2s ease-in-out;
+    transition: 200ms ease-in-out;
     position: relative;
     z-index: 1;
-    border-radius: 35px 35px 0px 0px;
     &::after {
       @include psevdo;
       height: calc(100% + 3rem);
@@ -25,8 +26,8 @@
       left: 0;
       opacity: 0;
       transition: opacity .2s ease;
+      border-radius: 35px 35px 0 0;
       z-index: -1;
-      border-radius: 35px 35px 0 0 ;
     }
 
     &:hover::after {
@@ -58,5 +59,17 @@
   }
   &::after {
     content: none;
+  }
+}
+
+@include max-w($mob-size) {
+  .nav {
+    border-radius: 25px 25px 0px 0px;
+    &__link {
+      border-radius: 25px 25px 0px 0px;
+      &::after {
+        border-radius: 35px 35px 0 0;
+      }
+    }
   }
 }

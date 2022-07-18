@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="Description" content="default">
+    <title>О компании</title>
+    <script src="js/picturefill.min.js" async="async"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+
+
+<body>
+
+  <header class="header _header-white" style="box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, .25);">
+    <div class="header__container">
+      <div class="header__body">
+        <div class="header__left">
+          <a href="#" class="header__logo">
+            <img src="img/sprite/logo-black.svg" alt="header-logo">
+          </a>
+          <button class="header__burger burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="header__right">
+          <a href="tel:73912525910З" class="header__call">
+            <span class="header__number">
+              +7 391 25-25-910З
+            </span>
+            <div class="header__call-block">
+              <img src="img/sprite/phone-icon.svg" class="call-icon" alt="phone-icon">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+  @@include('_about-page.html',{})
+  @@include('_mission.html', {})
+  @@include('_menu.html',{})
+  @@include('_employees.html',{})
+  @@include('_achievements.html',{})
+  @@include('_request.html',{})
+  @@include('_review.html',{})
+  </main>
+
+
+  @@include('_footer.html',{})
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+  <script src="js/burger.js"></script>
+  <script src="js/checkbox.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>

@@ -45,9 +45,9 @@
 // AOS.init();
 
 const newsRow = new Swiper('.journal__inner', {
-  // Optional parameters
   slidesPerView: 1,
   spaceBetween: 10,
+  speed: 500,
   breakpoints: {
     800: {
       slidesPerView: 3
@@ -56,13 +56,65 @@ const newsRow = new Swiper('.journal__inner', {
   pagination: {
     el: '.swiper-pagination',
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: '.journal__btn-next',
     prevEl: '.journal__btn-prev',
   },
-
-  // And if we need scrollbar
 });
 
+const diplomaRow = new Swiper('.achiev__slider-wrapper', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  speed: 500,
+  // loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.achiev__next',
+    prevEl: '.achiev__prev',
+  },
+});
+
+const employeesaRow = new Swiper('.empl__list', {
+  slidesPerView: 1,
+  speed: 500,
+  breakpoints: {
+    900: {
+      slidesPerView: 5
+    }
+  },
+  // loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.empl__next',
+    prevEl: '.empl__prev',
+  },
+});
+
+// const clientRow = new Swiper('.client__list', {
+//   slidesPerView: 5,
+//   speed: 500,
+//   breakpoints: {
+//     900: {
+//       slidesPerView: 5
+//     }
+//   },
+//   // loop: true,
+//   navigation: {
+//     nextEl: '.client__btn-next',
+//     prevEl: '.client__btn-prev',
+//   },
+// });
+
+if (menuLinks.length > 0) {
+  menuLinks.forEach(function (menuLink) {
+    menuLink.addEventListener("click", function (event) {
+      mobMenu.classList.remove('--open-menu');
+      body.classList.remove('--body-locked')
+      burger.classList.remove('--burger-active')
+    });
+  });
+}

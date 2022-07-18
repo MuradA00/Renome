@@ -2,11 +2,15 @@
   &__body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
     align-items: center;
     @include max-w($tab-size) {
       display: flex;
       flex-direction: column;
     }
+  }
+  &__wrapper {
+    overflow: hidden;
   }
   &__client {
     width: 100%;

@@ -120,6 +120,9 @@
 
 @include max-w(40.5em) {
   .request {
+    &__subtitle {
+      max-width: 100%;
+    }
     &__body {
       display: flex;
       flex-direction: column;
@@ -137,8 +140,15 @@
       picture,
       img {
         width: 100%;
-
       }
+    }
+  }
+}
+
+@include max-w($mob-size) {
+  .request {
+    &__button {
+      max-width: 100%;
     }
   }
 }

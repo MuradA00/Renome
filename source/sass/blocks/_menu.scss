@@ -6,12 +6,14 @@
   height: 100%;
   background-color: #fff;
   z-index: 10000;
-  transition: transform .3s ease-in-out;
+  transition: all .5s ease-in-out;
+  will-change: opacity;
+  opacity: 0;
   transform: translateX(-100%);
   &__inner {
     position: relative;
     height: 100%;
-    padding: max(2vw, 1rem);
+    padding: max(1.0625vw, 12px) max(2vw, 1rem);
     &::before {
       @include psevdo;
       width:  max(55.875vw, 24.25rem);
@@ -49,7 +51,11 @@
   }
   &__close {
     cursor: pointer;
-
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     span {
       width: 34px;
       height: 2px;
@@ -111,13 +117,9 @@
       }
     }
     &__link {
-
-
       font-size: clamp(1.25rem, 2.25vw, 2.25rem);
       color: var(--clr-black);
       transition: transform 300ms ease-in-out;
-
-
       &:hover {
         transform: translateX(10%);
       }
@@ -132,6 +134,7 @@
 }
 
 .--open-menu {
+  opacity: 1;
   transform: translateX(0%);
 }
 

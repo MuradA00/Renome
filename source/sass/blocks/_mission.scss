@@ -1,0 +1,45 @@
+.mission {
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__info {
+    padding: clamp(2.375rem, 7.1875vw, 7.1875rem) clamp(16px, 4.875vw, 4.875rem);
+    background-color: var(--clr-red);
+  }
+  &__descr {
+    margin-top: max(3.5vw, 1.9375rem);
+    p {
+      color: var(--clr-white);
+      line-height: 182%;
+      font-size: 0.875rem;
+      @include max-w($mob-size) {
+        font-size: 0.75rem;
+      }
+    }
+  }
+  &__bio {
+    color: var(--clr-white);
+    margin-top: clamp(2.125rem, 3.8125vw, 3.8125rem);
+  }
+  &__name {
+    font-size: clamp(1.125rem, 1.5vw, 1.5rem);
+    font-style: italic;
+    font-weight: 300;
+  }
+  &__role {
+    margin-top: min(0.625vw, 15px);
+    font-size: clamp(0.875rem, 1vw, 1rem);
+  }
+}
+
+@include max-w(56.25em) {
+  .mission {
+    &__body {
+      grid-template-columns: 100%;
+    }
+    &__role {
+      margin-top: 15px;
+    }
+  }
+}
