@@ -16,6 +16,9 @@
     @include al-flex;
     grid-gap: 28px;
   }
+  &__left {
+    grid-gap: 0;
+  }
   &__call{
     grid-gap: max(2vw, 1rem) !important;
     &:hover .call-icon {

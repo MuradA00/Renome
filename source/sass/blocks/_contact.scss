@@ -1,0 +1,75 @@
+.contact {
+  &__top {
+    background-color: var(--clr-200);
+    @include max-w($mob-size) {
+      flex-direction: column;
+      grid-gap: 4rem;
+      align-items: flex-start;
+    }
+  }
+  &__top-heading {
+    color: var(--clr-black);
+  }
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  &__top-button {
+    max-width: fit-content;
+    white-space: nowrap;
+    padding: 14px max(2.0625vw, 1.25rem);
+    @include max-w($mob-size) {
+      max-width: 100%;
+    }
+  }
+  &__image {
+    height: 100%;
+    width: 100%;
+    img,
+    picture {
+      width: inherit;
+      height: inherit;
+    }
+  }
+  &__content {
+    padding: clamp(29px, 4.3125vw, 4.3125rem) clamp(15px, 7.25vw, 7.25rem);
+    @include max-w(53.125em) {
+      padding: 29px 15px;
+    }
+  }
+  &__heading {
+    margin-bottom: 20px;
+    color: var(--clr-black);
+  }
+  &__phone {
+    span {
+      display: block;
+      color: var(--clr-black);
+    }
+  }
+  &__alternative,
+  .contact__phone {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+  }
+  &__alternative {
+    margin-top: max(1.5625vw, 1rem);
+  }
+  &__button {
+    margin-top: 17px;
+  }
+}
+
+@include max-w(53.125em) {
+  .contact {
+    &__body {
+      grid-template-columns: 100%;
+    }
+    &__image {
+      max-height: 18.75rem;
+    }
+    &__button {
+      max-width: 100%;
+    }
+  }
+}

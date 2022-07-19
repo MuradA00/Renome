@@ -1,0 +1,19 @@
+.account {
+  &__heading {
+    max-width: 33.125rem;
+    display: block;
+  }
+  &__subtitle {
+    max-width: 100%;
+  }
+  &__inputs {
+    margin-top: max(3.75vw, 1.25rem);
+  }
+  &__image {
+    width: 100%;
+    img,
+    picture {
+      width: 100%;
+    }
+  }
+}

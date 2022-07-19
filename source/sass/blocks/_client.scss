@@ -20,6 +20,9 @@
   padding: clamp(1.5rem, 9.75vw, 9.75rem)  max(6.25vw, 10px) max(2.56vw, 1.25rem) max(6.25vw, 10px);
   @include al-flex;
   justify-content: space-between;
+  @include max-w($mob-size) {
+    padding: clamp(1.5rem, 9.75vw, 9.75rem) 15px max(2.56vw, 1.25rem) 15px;
+  }
 }
 
 .pag-buttons {
