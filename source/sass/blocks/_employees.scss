@@ -9,10 +9,10 @@
 }
 
 .empl-list {
-  padding-bottom: 23px;
+  padding-bottom: 20px;
   transition: .2s ease;
   &__item {
-    height: 487px;
+    // height: 487px;
     cursor: pointer;
     opacity: 50%;
     transition: .2s ease-in-out;
@@ -20,8 +20,7 @@
       opacity: 1;
     }
     &:hover .empl-list__descr {
-      height: 100%;
-      margin-top: 30px;
+
       opacity: 1;
     }
   }
@@ -38,7 +37,7 @@
 
     }
     opacity: 0;
-    height: 0;
+
     transition: .3s ease-in-out;
   }
   &__name {

@@ -1,37 +1,55 @@
 .review {
   &__body {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 50% 1fr;
     overflow: hidden;
     align-items: center;
     @include max-w($tab-size) {
       display: flex;
       flex-direction: column;
+      grid-template-columns: 100%;
     }
   }
-  &__wrapper {
-    overflow: hidden;
-  }
-  &__client {
-    width: 100%;
+  &__wrapper-client {
     background-color: var(--clr-300);
     padding: clamp(1.5rem, 4.5625vw, 4.5625rem) clamp(10px, 14.375vw, 14.375rem) clamp(1.5rem, 10vw, 10rem) clamp(10px, 7.25vw, 7.25rem);
     @include max-w($tab-size) {
       padding: 1.5rem 10px;
+      max-width: 100%;
     }
+
+  }
+  .pag-next,
+  .pag-prev {
+    cursor: pointer;
+  }
+  &__wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  &__inner {
+
+  }
+  &__client {
+    width: 100%;
+  }
+  &__wrapper {
+    margin: 0 10px !important;
   }
   &__info {
-    margin: 0 clamp(10px, 4vw, 4rem) 0 clamp(10px, 6vw, 6rem);
+    width: 100%;
     line-height: 185%;
     max-width: 35.1875rem;
     max-width: 100%;
     p {
+      padding: 0 clamp(10px, 4vw, 4rem) 0 clamp(10px, 6vw, 6rem) !important;
       width: 100%;
       font-size: 14px;
       @include max-w($tab-size) {
         font-size: 12px;
         padding: 1.5rem 0;
         line-height: 170%;
+        padding: 30px 15px !important;
       }
     }
   }
@@ -68,3 +86,4 @@
     }
   }
 }
+

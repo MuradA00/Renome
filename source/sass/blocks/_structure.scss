@@ -1,0 +1,68 @@
+.structure {
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__toggle {
+    background-color: var(--clr-200);
+    padding: clamp(2rem, 6.5vw, 6.5rem) clamp(15px, 12.1875vw, 12.1875rem) clamp(2rem, 6.5vw, 6.5rem) clamp(15px, 7.125vw, 7.125rem);
+    @include max-w($mob-size) {
+      padding: 2rem 0.9375rem;
+    }
+  }
+  &__buttons {
+    margin-top: max(2.75vw, 1.5625rem);
+    @include al-flex;
+    grid-gap: clamp(2.5rem, 3.8125vw, 61px);
+    @include max-w($mob-size) {
+      justify-content: end;
+      img {
+        width: 60px;
+      }
+    }
+  }
+  &__heading {
+    color: var(--clr-black);
+  }
+  &__wrapper {
+    padding: 2.25rem 15px;
+    overflow: hidden;
+  }
+  &__benefits {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  &__inner {
+    height: 100%;
+    width: 100%;
+  }
+  &__benefits-item {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: max(2vw, 1rem);
+  }
+  &__benefits-heading {
+    color: var(--clr-black);
+  }
+  &__benefits-icon {
+    img {
+      width: max(7.5vw, 5rem);
+    }
+  }
+  &__btn-prev,
+  .structure__btn-next {
+    cursor: pointer;
+  }
+}
+
+@include max-w($tab-size) {
+  .structure {
+    &__body {
+      grid-template-columns: 100%;
+    }
+  }
+}

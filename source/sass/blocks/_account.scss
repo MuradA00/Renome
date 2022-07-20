@@ -11,6 +11,9 @@
   }
   &__image {
     width: 100%;
+    @include max-w($mob-size) {
+      height: 17.1875rem;
+    }
     img,
     picture {
       width: 100%;

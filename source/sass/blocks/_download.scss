@@ -1,0 +1,27 @@
+.download {
+  &__subtitle {
+    max-width: 33.125rem;
+    margin-top: max(1vw, 4px);
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    img,
+    picture {
+      width: inherit;
+      height: inherit;
+    }
+  }
+  &__inputs {
+    margin-top: 1.875rem;
+  }
+  &__name-block {
+    @include max-w(40.5em) {
+      padding: 13.5px 19px;
+    }
+  }
+  &__inner {
+    width: max(13.1875vw, 8.25rem);
+
+  }
+}

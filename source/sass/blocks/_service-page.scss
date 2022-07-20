@@ -1,0 +1,75 @@
+.serv-page {
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    @include max-w(50em) {
+      grid-template-columns: 100%;
+    }
+  }
+  &__info {
+    padding: 1.5rem clamp(1rem, 6vw, 6rem);
+    @include max-w(50em) {
+      padding: 1.5rem 16px;
+    }
+  }
+  &__descr {
+    p {
+      font-size: 0.875rem;
+      line-height: 180%;
+    }
+  }
+  &__subtitle {
+    display: block;
+    font-style: italic;
+    margin-top: max(1.875vw, 1.5rem);
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    @include max-w(50em) {
+      height: 15rem;
+    }
+    img,
+    picture {
+      height: inherit;
+      width: inherit;
+    }
+  }
+  &__text {
+    padding: 2.3125rem clamp(15px, 6vw, 6rem);
+    @include max-w($mob-size) {
+      padding: 2.3125rem 15px;
+    }
+  }
+  &__text-inner {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 26px;
+  }
+  &__title {
+    text-align: center;
+    color: var(--clr-black);
+  }
+}
+
+.serv-list {
+  margin-top: max(0.75vw, .375rem);
+  max-width: 30.625rem;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  &__row {
+    @include al-flex;
+    grid-gap: 8px;
+    font-size: 0.875rem;
+  }
+  span {
+    flex-shrink: 0;
+    width: 13px;
+    height: 1px;
+    background-color: var(--clr-red);
+    display: block;
+  }
+}

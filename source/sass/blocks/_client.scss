@@ -1,10 +1,18 @@
 .client {
+  .swiper-wrapper {
+    max-width: 78em !important;
+    margin: 0 auto;
+  }
   &__pagination {
     background-color: var(--clr-red);
     @include max-w($tab-size) {
       flex-direction: column;
 
     }
+  }
+  &__list {
+    // max-width: 78em;
+    // overflow: hidden;
   }
   &__buttons {
     margin-left: auto;
@@ -27,7 +35,7 @@
 
 .pag-buttons {
   display: flex;
-  grid-gap: max(3.8125vw, .7rem);
+  grid-gap: max(3.8125vw, 2.5rem);
 }
 
 .pag-name {
@@ -43,20 +51,19 @@
 .sponsor-list {
   padding: clamp(2.5rem, 4.75vw, 4.75rem) 0 clamp(2.5rem, 7.875vw, 7.875rem);
   @include al-flex;
-  grid-gap: 1rem;
+  grid-gap: 3.5rem;
+  flex-wrap: nowrap;
   justify-content: space-between;
-  max-width: 75em;
   margin-inline: auto;
   @include max-w($tab-size) {
-    flex-wrap: nowrap;
-    grid-gap: .5rem;
-    overflow-y: scroll;
-  }
+}
+
   &__item {
     filter: grayscale(100%);
     transition: .2s ease-in-out;
+    flex: 0 0 auto;
+    max-width: fit-content;
     @include max-w($tab-size) {
-      flex: 0 0 auto;
       &:last-child {
         margin-left: 1.5rem;
       }
@@ -69,9 +76,18 @@
 
 @include max-w($mob-size) {
   .sponsor-list {
-    overflow-y: scroll !important;
+    grid-gap: 2rem;
     &__item {
       flex: 0 0 auto !important;
+    }
+  }
+}
+
+@include max-w(46.875em) {
+  .client {
+    &__list {
+      max-width: 100%;
+      overflow: visible;
     }
   }
 }

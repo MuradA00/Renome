@@ -58,6 +58,9 @@
   &__button {
     margin-top: 17px;
   }
+  &__button-hidden {
+    display: none;
+  }
 }
 
 @include max-w(53.125em) {
@@ -66,10 +69,20 @@
       grid-template-columns: 100%;
     }
     &__image {
+      position: relative;
       max-height: 18.75rem;
+
+    }
+    &__button-hidden {
+      display: inline-flex !important;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      max-width: 18rem;
     }
     &__button {
-      max-width: 100%;
+      display: none;
     }
   }
 }

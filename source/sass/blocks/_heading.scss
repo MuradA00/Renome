@@ -1,0 +1,34 @@
+.heading {
+
+  &__inner {
+    position: relative;
+    display: flex;
+    grid-gap: max(4.1875vw, 1.25rem);
+    flex-direction: column;
+    padding: clamp(2rem, 4.875vw, 4.875rem) clamp(1rem, 7.125vw, 7.125rem) max(2.6875vw, 1.4375rem) clamp(1rem, 7.125vw, 7.125rem);
+    @include max-w($mob-size) {
+      padding: 2rem 15px max(2.6875vw, 1.4375rem)  15px;
+    }
+  }
+  &__bottom {
+    width: 100%;
+    @include al_flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    grid-gap: 2.5rem 1rem;
+  }
+  &__return {
+    width: max(7.1875vw, 3.875rem);
+  }
+  &__button {
+    // margin-top: clamp(1rem, 4.1875vw, 4.1875rem);
+    max-width: fit-content;
+    padding: clamp(12px, 0.875vw, 0.875rem) clamp(25px, 1.8625vw, 1.8625rem);
+  }
+}
+
+@include max-w(56.875em) {
+  .heading {
+
+  }
+}

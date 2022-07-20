@@ -1,0 +1,18 @@
+.stock {
+  --orange-clr: #F7741F;
+  &__pagination {
+    background-color: var(--orange-clr);
+  }
+  .news-list {
+    &__link {
+      grid-gap: clamp(1.3125rem, 2vw, 2rem);
+    }
+  }
+  &__btn-prev,
+  .stock__btn-next {
+    cursor: pointer;
+    img {
+      width: max(7.5vw, 3.75rem);
+    }
+  }
+}
