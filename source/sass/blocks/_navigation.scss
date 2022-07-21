@@ -29,7 +29,6 @@
       border-radius: 35px 35px 0 0;
       z-index: -1;
     }
-
     &:hover::after {
       opacity: 1;
     }
@@ -45,7 +44,6 @@
       opacity: 1;
     }
     &:hover {
-
       background-color: var(--clr-red);
       color: var(--clr-white);
       padding-bottom: clamp(4rem, 7.375vw, 7.375rem);

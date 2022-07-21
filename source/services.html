@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="Description" content="default">
-    <title>О компании</title>
+    <title>Услуги</title>
     <script src="js/picturefill.min.js" async="async"></script>
     <link rel="stylesheet" href="css/style.min.css">
     <link
@@ -20,33 +20,68 @@
   @@include('_header-white.html',{})
 
   <main>
-    <div class="heading" style="background-color: #E21119;">
+    <div class="heading heading--spacing-top" style="background-color: #E21119;">
       <div class="heading__inner">
-        <a href="index.html" class="heading__return">
-          <img src="img/pagination/prev-btn.svg" alt="prev-btn">
-        </a>
         <div class="heading__bottom">
           <div class="heading__name _cursive-heading">
-            Бухгалтерское сопровождение ИП / ООО
+              Услуги
           </div>
-          <button class="heading__button _default-btn _default-btn-white">
-            Узнать стоимость подключения
-          </button>
         </div>
       </div>
     </div>
-    @@include('_service-page.html',{})
-    @@include('_structure.html',{})
-    @@include('_stock.html',{})
-    @@include('_offer.html',{})
+    <section class="navigation">
+      <div class="navigation__container">
+        <div class="navigation__body">
+          <nav class="nav nav-service">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">Электронная подпись <img src="img/sprite/arrow-right.svg" alt="arrow-right">
+              </a></li>
+              <li class="nav__item">
+                <div class="nav__link">
+                  Услуги бухгалтера
+                </div>
+                <div class="nav__hidden-list">
+                  <ul class="hidden-list">
+                    <li class="hidden-list__item">
+                      <a href="#" class="hidden-list__link">
+                        Бухгалтерское сопровождение ИП / ООО
+                      </a>
+                      <img src="img/sprite/arrow-right.svg" alt="arrow-right">
+                    </li>
+                    <li class="hidden-list__item">
+                      <a href="#" class="hidden-list__link">
+                        Бухгалтерское сопровождение ИП / ООО
+                      </a>
+                      <img src="img/sprite/arrow-right.svg" alt="arrow-right">
+                    </li>
+                    <li class="hidden-list__item">
+                      <a href="#" class="hidden-list__link">
+                        Бухгалтерское сопровождение ИП / ООО
+                      </a>
+                      <img src="img/sprite/arrow-right.svg" alt="arrow-right">
+                    </li>
+                    <li class="hidden-list__item">
+                      <a href="#" class="hidden-list__link">
+                        Бухгалтерское сопровождение ИП / ООО
+                      </a>
+                      <img src="img/sprite/arrow-right.svg" alt="arrow-right">
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav__item"><a href="#" class="nav__link">Юридические услуги <img src="img/sprite/arrow-right.svg" alt="arrow-right"></a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Касса под ключ <img src="img/sprite/arrow-right.svg" alt="arrow-right"></a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Аренда рабочего пространства <img src="img/sprite/arrow-right.svg" alt="arrow-right"></a></li>
+              <li class="nav__item"><a href="contur.html" class="nav__link --green-one">Скб контур <img src="img/sprite/arrow-right.svg" alt="arrow-right"></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+
     @@include('_menu.html',{})
-    @@include('_account.html',{})
-    @@include('_contact.html',{})
-    @@include('_appeal.html',{})
-    @@include('_progress.html',{})
-    @@include('_price.html',{})
-    @@include('_review.html',{})
-    @@include('_download.html',{})
+    @@include('_request.html',{})
   </main>
 
 
