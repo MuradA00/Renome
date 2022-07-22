@@ -6,6 +6,9 @@
   }
   &__content {
     padding: 1.9375rem clamp(0.9375rem, 6vw, 6rem);
+    @include max-w($mob-size) {
+      padding: 1.9375rem 15px;
+    }
   }
   &__title {
     color: var(--clr-black);
