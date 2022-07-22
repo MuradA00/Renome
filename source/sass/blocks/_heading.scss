@@ -32,6 +32,19 @@
     max-width: fit-content;
     padding: clamp(12px, 0.875vw, 0.875rem) clamp(25px, 1.8625vw, 1.8625rem);
   }
+  &__sorting {
+    @include al-flex;
+    grid-gap: 13px;
+    span {
+      font-size: 1.125rem;
+      color: var(--clr-white);
+      font-style: italic;
+      font-weight: 300;
+    }
+    svg {
+      flex: 0 0 auto;
+    }
+  }
 }
 
 @include max-w(56.875em) {
