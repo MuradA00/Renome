@@ -183,3 +183,16 @@ if (menuLinks.length > 0) {
     });
   });
 }
+
+var elem = document.querySelector('.gallery-inner');
+var msnry = new Masonry( elem, {
+  // options
+  itemSelector: '.grid-inner__photo',
+  columnWidth: 200
+});
+
+// element argument can be a selector string
+//   for an individual element
+var msnry = new Masonry( '.grid', {
+  // options
+});
