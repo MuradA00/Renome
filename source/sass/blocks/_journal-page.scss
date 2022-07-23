@@ -4,6 +4,9 @@
     margin-inline: auto;
     padding: 0 15px;
   }
+  &__inner {
+    padding-bottom: clamp(3.75rem, 4.375vw, 4.375rem);
+  }
   &__btn {
     display: flex;
     justify-content: center;
