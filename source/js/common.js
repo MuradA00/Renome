@@ -116,11 +116,21 @@ const employeesaRow = new Swiper('.empl__list', {
 });
 
 const clientRow = new Swiper('.client__list', {
-  slidesPerView: 'auto',
   speed: 600,
+  slidesPerView: 'auto',
+  initialSlide:0,
+  loopedSlides:10,
+  visibilityFullFit: true,
+  autoResize: false,
+  spaceBetween: 25,
   grabCursor: true,
   paginationClickable: true,
   mousewheelReleaseOnEdges: true,
+  breakpoints: {
+    500: {
+      spaceBetween: 56
+    }
+  },
   // loop: true,
   navigation: {
     nextEl: '.client__btn-next',
@@ -143,7 +153,7 @@ const clientText = new Swiper('.review__wrapper', {
 
 const clientName = new Swiper('.review__inner', {
   slidesPerView: 'auto',
-  speed: 200,
+  speed: 300,
   preventInteractionOnTransition: false,
   allowTouchMove: false,
   // loop: true,

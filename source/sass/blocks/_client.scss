@@ -1,7 +1,6 @@
 .client {
   .swiper-wrapper {
-    max-width: 78em !important;
-    margin: 0 auto;
+
   }
   &__pagination {
     background-color: var(--clr-red);
@@ -11,8 +10,9 @@
     }
   }
   &__list {
-    // max-width: 78em;
-    // overflow: hidden;
+    max-width: 78em !important;
+    margin: 0 auto;
+    overflow-y: scroll;
   }
   &__buttons {
     margin-left: auto;
@@ -51,7 +51,7 @@
 .sponsor-list {
   padding: clamp(2.5rem, 4.75vw, 4.75rem) 0 clamp(2.5rem, 7.875vw, 7.875rem);
   @include al-flex;
-  grid-gap: 3.5rem;
+
   flex-wrap: nowrap;
   justify-content: space-between;
   margin-inline: auto;
@@ -76,7 +76,6 @@
 
 @include max-w($mob-size) {
   .sponsor-list {
-    grid-gap: 2rem;
     &__item {
       flex: 0 0 auto !important;
     }

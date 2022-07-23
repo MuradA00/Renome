@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="Description" content="default">
+    <title>Услуги Внутренняя</title>
+    <script src="js/picturefill.min.js" async="async"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+
+
+<body>
+
+  @@include('_header-white.html',{})
+
+  <main>
+    <div class="heading" style="background-color: var(--clr-purple);">
+      <div class="heading__inner">
+        <a href="index.html" class="heading__return">
+          <img src="img/pagination/prev-btn.svg" alt="prev-btn">
+        </a>
+        <div class="heading__bottom">
+          <div class="heading__name _cursive-heading">
+            О налогообложении подарков сотрудникам
+          </div>
+          <div class="heading__btn-row">
+            <a href="index.html" class="heading__return _hidden-return">
+              <img src="img/pagination/prev-btn.svg" alt="prev-btn">
+            </a>
+            <button class="heading__btn filter-list__button">
+              НДС
+            </button>
+            <button class="heading__btn filter-list__button">
+              Зарплата и кадры
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="link-journal">
+      <div class="link-journal__container">
+        <div class="link-journal__body">
+          <div class="link-journal__inner">
+            <div class="link-journal__info">
+              <div class="link-journal__date">
+                14.12.2021
+              </div>
+              <div class="link-journal__text">
+                <p>
+                  В преддверии наступающих праздников, специалисты главного финансового ведомства страны, в своём письме от 15 октября 2021 г. № 03-01-10/83519, разъяснили некоторые особенности налогообложения подарков сотрудникам.
+                </p>
+                <p>
+                  В частности, Минфин России обратил внимание на то, что товары, безвозмездно переданные работникам в качестве ценных подарков, являются объектом налогообложения налогом на добавленную стоимость. Вместе с этим, на основании п. 4 ст. 420 Налогового кодекса РФ, страховыми взносами не облагаются выплаты и иные вознаграждения в рамках гражданско-правовых договоров, предметом которых является переход права собственности или иных вещных прав на имущество (имущественные права). Необходимо учитывать, что в соответствии с п. 2 ст. 574 Гражданского кодекса РФ если дарителем является юридическое лицо и стоимость дара составляет три тысячи рублей и выше, то договор дарения движимого имущества должен быть совершён в письменной форме.
+                </p>
+                <p>
+                  При несоблюдении формы вышеназванного договора подарок будет квалифицироваться как выплата в иной, в том числе натуральной форме и его стоимость будет облагаться страховыми взносами. Кроме этого, на основании подп. 2 п. 2 ст. 211 Налогового кодекса РФ, при получении подарка у работника возникает доход в натуральной форме, подлежащий налогообложению налогом на доходы физических лиц, но если стоимость подарка не превышает четырёх тысяч рублей, то в соответствии с п. 28 ст. 217 Налогового кодекса РФ, такой доход освобождается от налогообложения.
+                </p>
+              </div>
+            </div>
+            <div class="link-journal__image">
+              <picture>
+                <source type='image/webp' srcset='img/journal/journal-hq-image.webp'>
+                <img src='img/journal/journal-hq-image.png' alt='journal-first-image'>
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="toggle">
+      <div class="toggle__inner">
+        <div class="toggle__prev">
+          <div class="toggle__heading _cursive-heading">
+            Продлен мораторий на проведение проверок малого бизнеса на 2022 год.
+          </div>
+          <a href="#" class="toggle__prev-link">
+            <img src="img/sprite/black-arrow.svg" class="toggle__arrow" alt="toggle-arrow">
+          </a>
+        </div>
+        <div class="toggle__next">
+          <div class="toggle__heading _cursive-heading">
+            Учет расходов на тестирование работников на COVID-19
+          </div>
+          <a href="#" class="toggle__next-link">
+            <img src="img/sprite/next-red-long.svg" class="toggle__arrow" alt="toggle-arrow">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    @@include('_menu.html',{})
+    @@include('_request.html',{})
+  </main>
+
+
+  @@include('_footer.html',{})
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+  <script src="js/burger.js"></script>
+  <script src="js/checkbox.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>
