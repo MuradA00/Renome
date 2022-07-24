@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="Description" content="default">
+    <title>Контакты</title>
+    <script src="js/picturefill.min.js" async="async"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  </head>
+
+
+<body>
+
+  @@include('_header-white.html',{})
+  @@include('_menu.html',{})
+  <main>
+    <section class="contacts">
+      <div class="contacts__container">
+        <div class="contacts__body">
+          <div class="contacts__content">
+            <h3 class="contacts__heading _cursive-heading">
+              Контакты
+            </h3>
+            <div class="contacts__info">
+              <div class="contacts__info-item">
+                <div class="contacts__name">
+                  Адрес офиса
+                </div>
+                <div class="contacts__data">
+                  Красноярск, ул. Карла Маркса д. 48, офис 8-01
+                </div>
+              </div>
+              <div class="contacts__info-item">
+                <div class="contacts__name">
+                  Электронная почта
+                </div>
+                <div class="contacts__data">
+                  renome@renome-pb.ru
+                </div>
+              </div>
+              <div class="contacts__info-item">
+                <div class="contacts__name">
+                  Телефон
+                </div>
+                <div class="contacts__data">
+                  +7 391 25-25-910
+                </div>
+              </div>
+              <div class="contacts__info-item">
+                <div class="contacts__name">
+                  Режим работы
+                </div>
+                <div class="contacts__data --fixed-width">
+                  Понедельник-пятница 9.00-18.00 <br>
+                  Суббота, Воскресенье – выходной
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contacts__map">
+            <picture>
+              <source type='image/webp' srcset='img/contacts/map-image.webp'>
+              <img src='img/contacts/map-image.png' alt='map-image'>
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="heading heading--spacing-top" style="background-color: #E21119;">
+      <div class="heading__inner">
+        <div class="heading__bottom">
+          <div class="heading__name _cursive-heading">
+            Реквизиты компании
+          </div>
+          <button class="heading__button _default-btn _default-btn-white">
+            Скачать реквизиты
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="contacts__information">
+      <div class="contacts__column">
+        <div class="contacts__col-item">
+          <div class="contacts__red-text">
+              Полное наименование:
+          </div>
+          <div class="contacts__column-info">
+            Общество с ограниченной ответственностью «Компания - Реноме»
+          </div>
+        </div>
+        <div class="contacts__col-item">
+          <div class="contacts__red-text">
+            Сокращенное наименование:
+          </div>
+          <div class="contacts__column-info">
+            ООО "Компания - Реноме"
+          </div>
+        </div>
+        <div class="contacts__col-item">
+          <div class="contacts__red-text">
+              Телефон:
+          </div>
+          <div class="contacts__column-info">
+            660049, Красноярский край, Красноярск г, Карла Маркса ул, дом № 48, офис  8-01
+          </div>
+        </div>
+        <div class="contacts__col-item">
+          <div class="contacts__red-text">
+              Юридический адрес:
+          </div>
+          <div class="contacts__column-info">
+            2466260167 / 246601001
+          </div>
+        </div>
+        <div class="contacts__col-item">
+          <div class="contacts__red-text">
+              ИНН/КПП:
+          </div>
+          <div class="contacts__column-info">
+            Общество с ограниченной ответственностью «Компания - Реноме»
+          </div>
+        </div>
+        <div class="contacts__col-item">
+          <div class="contacts__red-text">
+              БИК:
+          </div>
+          <div class="contacts__column-info">
+            045004774
+          </div>
+        </div>
+        <div class="contacts__col-item">
+          <div class="contacts__red-text">
+              Расчетный счет:
+          </div>
+          <div class="contacts__column-info">
+            40702810623300000776 в банке Филиал «Новосибирский» в г. Новосибирск АКЦИОНЕРНОГО ОБЩЕСТВА «АЛЬФА-БАНК», к/с 30101810600000000774
+          </div>
+        </div>
+      </div>
+    </div>
+    @@include('_request.html',{})
+  </main>
+
+
+  @@include('_footer.html',{})
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="js/burger.js"></script>
+  <script src="js/checkbox.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>
