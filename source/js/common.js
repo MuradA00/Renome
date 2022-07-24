@@ -44,6 +44,7 @@
 
 // AOS.init();
 
+
 const newsRow = new Swiper('.journal__inner', {
   slidesPerView: 1,
   speed: 500,
