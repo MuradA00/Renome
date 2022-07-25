@@ -6,6 +6,16 @@
 }
 
 .gallery-inner {
+  margin-top: -15px;
+  margin-bottom: 15px;
+  &__show {
+    display: none;
+    @include max-w(31.25em) {
+      display: block !important;
+      margin-inline: auto;
+      margin-top: 45px;
+    }
+  }
   &__descr {
     position: absolute;
     bottom: 20px;
@@ -67,6 +77,19 @@
   }
 }
 
+@include max-w(31.25em) {
+  .gallery {
+    &__body {
+      padding-bottom: 45px;
+    }
+  }
+  .gallery-inner {
+    &__show {
+      max-width: calc(100% - 20px);
+    }
+  }
+}
+
 .gallery-inner__photo {
   width: 33%;
 }
@@ -79,10 +102,9 @@
   }
 }
 
-.gallery-inner__photo--height2 {  }
-
 @include max-w(37.5em) {
   .gallery-inner {
+    margin-top: 0;
     display: flex !important;
     flex-wrap: wrap;
     height: 100% !important;
@@ -157,26 +179,32 @@
 }
 
 .fancybox-button--arrow_left {
-
   background-image: url('../../img/sprite/fancybox-prev.svg') !important;
   padding: 0 !important;
-  margin-left: 30px !important;
+  margin-left: 20px !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-
+  left: 20% !important;
   svg {
     display: none !important;
   }
 }
 
-.fancybox-button--arrow_right {
+.fancybox-button {
+  color: #fff !important;
+}
 
+.fancybox-button[disabled] {
+  opacity: .5 !important;
+}
+
+.fancybox-button--arrow_right {
+  right: 20% !important;
   background-image: url('../../img/sprite/fancybox-next.svg') !important;
   padding: 0 !important;
-  margin-right: 30px !important;
+  margin-right: 20px !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-
   svg {
     display: none !important;
   }
@@ -193,3 +221,57 @@
 //   width: max(37.25vw, 20rem) !important;
 //   height: max(37.25vw, 20rem) !important;
 // }
+
+@include max-w(68.75em) {
+  .fancybox-button--arrow_right {
+    right: 12.5% !important;
+  }
+  .fancybox-button--arrow_left {
+    left: 12.5% !important;
+  }
+}
+
+@include max-w(43.75em) {
+  .fancybox-button--arrow_right {
+    right: 1% !important;
+  }
+  .fancybox-button--arrow_left {
+    left: 1% !important;
+  }
+}
+
+@include max-w(37.5em) {
+  .gallery{
+    &--heading {
+      padding: 2rem 15px 7.9375rem !important;
+    }
+  }
+}
+
+.fancybox-caption {
+  bottom: 15% !important;
+  background: transparent !important;
+}
+
+.fancybox-container {
+  backdrop-filter: blur(10px) !important;
+
+}
+
+@include max-w($mob-size) {
+  .fancybox-caption {
+    bottom: 17% !important;
+    padding: 0 20px!important;
+  }
+  .fancybox-button--arrow_left,
+  .fancybox-button--arrow_right {
+    top: 18% !important;
+    margin: 0 !important;
+  }
+  .fancybox-button--arrow_right {
+    left: 30% !important;
+  }
+  .fancybox-button--arrow_left {
+    margin-left: 15px !important;
+  }
+}

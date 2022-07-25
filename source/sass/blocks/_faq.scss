@@ -1,6 +1,6 @@
 .faq {
   &__container {
-    max-width: 67.8125em;
+    max-width: 77.6875em;
     margin-inline: auto;
     padding: 0 15px;
   }
@@ -9,8 +9,10 @@
 .faq-list {
   padding: clamp(1rem, 4.5vw, 4.5rem) 0;
   &__item {
-
-    padding: max(2.25vw, 25px) 0;
+    padding: max(2.25vw, 25px) clamp(15px, 4.875vw, 4.875rem);
+    @include max-w($mob-size) {
+      padding: max(2.25vw, 25px) 0;
+    }
     border-bottom: 1px solid var(--clr-black);
     &:nth-child(1) {
       border-top: 1px solid var(--clr-black);
@@ -78,6 +80,14 @@
         transition: transform .2s ease;
         transform: rotate(0);
       }
+    }
+  }
+}
+
+@include max-w(34.375em) {
+  .faq{
+    &--heading {
+      padding: 2rem 15px 7.9375rem !important;
     }
   }
 }

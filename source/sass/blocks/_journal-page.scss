@@ -135,12 +135,18 @@
   justify-content: center;
   &__item {
     max-width: 100%;
+    margin-top: 0 !important;
   }
  }
 }
 
 @include max-w($mob-size) {
   .journal-page {
+    &--heading {
+      flex-direction: column;
+      align-items: baseline;
+      grid-gap: 4.125rem;
+    }
     &__container {
     }
   }
@@ -166,5 +172,12 @@
       height: 100%;
     }
   }
+}
 
+@include max-w(70em) {
+  .journal-page {
+    &__filter {
+      margin-right: -15px;
+    }
+  }
 }

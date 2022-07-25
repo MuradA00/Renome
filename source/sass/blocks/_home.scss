@@ -83,6 +83,7 @@
     }
     &__title {
       max-width: 25rem;
+      margin-inline: auto;
     }
     &__call {
       display: block;
@@ -101,6 +102,8 @@
     }
     &__descr {
       margin-bottom: 10px;
+      max-width: 20rem;
+      margin-inline: auto;
     }
     &__title {
       margin-bottom: 10px;
@@ -118,11 +121,42 @@
 
 @include max-w($mob-size) {
   .home {
-    &__btn {
-      max-width: 100%;
+    &__info {
+
     }
     &__body {
       grid-gap: 2.8rem;
+    }
+  }
+}
+
+@include max-w(28.125em) {
+  .home {
+    &__btn {
+      max-width: 21rem;
+    }
+    &__info {
+      max-width: 100%;
+    }
+  }
+}
+
+@include max-w(23.75em) {
+  .home {
+    &__info {
+      text-align: left;
+    }
+    &__descr {
+      margin-inline: 0;
+    }
+    &__btn {
+     max-width: 100%;
+    }
+    &__title {
+      margin-bottom: 17px;
+    }
+    &__descr {
+      margin-bottom: 1.25rem;
     }
   }
 }

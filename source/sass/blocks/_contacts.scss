@@ -4,7 +4,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   &__information {
-    max-width: 91.875rem;
+    max-width: 78.25rem;
     margin-inline: auto;
     padding: 0 15px;
   }
@@ -103,6 +103,17 @@
     }
     &__map {
       display: none;
+    }
+  }
+}
+
+@include max-w(28.125em) {
+  .contacts {
+    &__data {
+      max-width: 17.5rem;
+    }
+    &__info {
+      max-width: 18.95rem;
     }
   }
 }

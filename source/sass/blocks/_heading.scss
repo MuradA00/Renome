@@ -1,7 +1,7 @@
 .heading {
   &--spacing-top {
     .heading__inner {
-      padding: clamp(2rem, 9.75vw, 9.75rem) clamp(1rem, 7.125vw, 7.125rem) max(2.6875vw, 1.4375rem) clamp(1rem, 7.125vw, 7.125rem);
+      padding: clamp(2rem, 9.75vw, 9.75rem) 15px max(2.6875vw, 1.4375rem) 15px;
       @include max-w($mob-size) {
         padding: 2rem 15px max(2.6875vw, 1.4375rem)  15px;
       }
@@ -11,10 +11,12 @@
     position: relative;
     display: flex;
     grid-gap: max(4.1875vw, 1.25rem);
+    max-width: 78.25rem;
+    margin-inline: auto;
     flex-direction: column;
-    padding: clamp(2rem, 4.875vw, 4.875rem) clamp(1rem, 7.125vw, 7.125rem) max(2.6875vw, 1.4375rem) clamp(1rem, 7.125vw, 7.125rem);
+    padding: clamp(2rem, 4.875vw, 4.875rem) 15px max(2.6875vw, 1.4375rem) 15px;
     @include max-w($mob-size) {
-      padding: 2rem 15px max(2.6875vw, 1.4375rem)  15px;
+      padding: 2rem 15px max(2.6875vw, 1.4375rem) 15px;
     }
   }
   &__bottom {
@@ -47,8 +49,10 @@
   }
 }
 
-@include max-w(56.875em) {
+@include max-w(28.125em) {
   .heading {
-
+    &__button {
+      max-width: 100%;
+    }
   }
 }

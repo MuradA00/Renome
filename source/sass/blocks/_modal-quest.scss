@@ -1,0 +1,100 @@
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  user-select: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.51445);
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  align-items: center;
+  transition: opacity .25s ease-in-out, visibility .25s ease-in-out;
+  &__wrapper {
+    max-height: calc(100% - 15px);
+    max-width: calc(100% - 15px);
+    background-color: var(--clr-white);
+  }
+  &__input {
+    margin-top: 0;
+  }
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 31px;
+  }
+  &__form {
+    position: relative;
+    z-index: 99999;
+    max-width: 37.5625rem;
+    padding: clamp(1.875rem, 3.3125vw, 3.3125rem) clamp(15px, 4.375vw, 70px) clamp(1.25rem, 2.5625vw, 41px) clamp(15px, 4.375vw, 70px);
+  }
+  &__heading {
+    color: var(--clr-black);
+    text-align: center;
+    margin-bottom: clamp(2.8125rem, 4.25vw, 68px);
+  }
+  &__notif {
+    margin-top: max(1.5vw, 1.0625rem);
+    display: flex;
+    grid-gap: 11px;
+    margin-bottom: max(1.9375vw,  1.1875rem);
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+  }
+  &__close-icon {
+    height: 20px;
+      position: absolute;
+      right: min(-2.5vw, -2rem);
+      top: 12px;
+      z-index: 9999;
+      cursor: pointer;
+    span {
+      display: block;
+      width: max(1.5vw, 1.375rem);
+      height: 2px;
+      background-color: var(--clr-white);
+      display: block;
+      &:nth-child(1) {
+        transform: rotate(45deg);
+      }
+      &:nth-child(2) {
+        position: relative;
+        top: -2px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+@include max-w($mob-size) {
+  .modal {
+    &__send {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.--show-modal {
+  user-select: all;
+  visibility: visible;
+  opacity: 1;
+}
+
+@include max-w(36.875em) {
+  .modal {
+    &__close-icon {
+      right: 0;
+      top: -20px;
+    }
+  }
+}

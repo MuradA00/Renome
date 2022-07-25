@@ -44,6 +44,24 @@
 
 // AOS.init();
 
+const modalTrigger = document.querySelectorAll('.footer__btn')
+const modalQuest = document.querySelector('.modal')
+const closeModal = document.querySelector('.modal__close-icon')
+
+
+modalTrigger.forEach(modalBtn => {
+  modalBtn.addEventListener('click', () => {
+    modalQuest.classList.add('--show-modal')
+    body.classList.add('--body-locked')
+  })
+})
+
+closeModal.addEventListener('click', function() {
+  modalQuest.classList.remove('--show-modal')
+  body.classList.remove('--body-locked')
+})
+
+
 
 const newsRow = new Swiper('.journal__inner', {
   slidesPerView: 1,
