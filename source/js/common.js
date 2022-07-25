@@ -1,9 +1,4 @@
-$(document).ready(function() {
-  $('.count').counterUp({
-    delay: 15,
-    time: 2000
-  })
-})
+
 
 const modalTrigger = document.querySelectorAll('.footer__btn')
 const modalQuest = document.querySelector('.modal')
