@@ -11,6 +11,10 @@
     padding: max(4.75vw, 2rem) clamp(2rem, 5.5vw, 7.5rem) 0;
     img {
       object-fit: unset;
+      height: 100%;
+    }
+    picture {
+      height: 100%;
     }
   }
   &__info {

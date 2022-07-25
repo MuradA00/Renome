@@ -274,4 +274,24 @@
   .fancybox-button--arrow_left {
     margin-left: 15px !important;
   }
+  .fancybox-caption {
+    bottom: 12% !important;
+  }
+}
+
+@media only screen and (max-height: 46.25em) {
+  .fancybox-caption {
+    bottom: 7% !important;
+  }
+  .fancybox-button--arrow_left,
+  .fancybox-button--arrow_right {
+    top: 13% !important;
+  }
+}
+
+@media only screen and (max-height: 40em) {
+  .fancybox-button--arrow_left,
+  .fancybox-button--arrow_right {
+    top: 10% !important;
+  }
 }

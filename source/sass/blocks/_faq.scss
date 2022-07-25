@@ -84,10 +84,3 @@
   }
 }
 
-@include max-w(34.375em) {
-  .faq{
-    &--heading {
-      padding: 2rem 15px 7.9375rem !important;
-    }
-  }
-}

@@ -1,7 +1,21 @@
 .heading {
+  &__social {
+    .social {
+      max-width: 305px;
+      margin-left: auto;
+      grid-gap: 45px !important;
+      width: fit-content;
+      justify-content: unset;
+      @include max-w($mob-size) {
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
   &--spacing-top {
     .heading__inner {
-      padding: clamp(2rem, 9.75vw, 9.75rem) 15px max(2.6875vw, 1.4375rem) 15px;
+      padding: clamp(2rem, 9.75vw, 9.75rem) clamp(15px, 7.125vw, 7.125rem) max(2.6875vw, 1.4375rem) clamp(15px, 7.125vw, 7.125rem);
       @include max-w($mob-size) {
         padding: 2rem 15px max(2.6875vw, 1.4375rem)  15px;
       }
@@ -11,10 +25,9 @@
     position: relative;
     display: flex;
     grid-gap: max(4.1875vw, 1.25rem);
-    max-width: 78.25rem;
     margin-inline: auto;
     flex-direction: column;
-    padding: clamp(2rem, 4.875vw, 4.875rem) 15px max(2.6875vw, 1.4375rem) 15px;
+    padding: clamp(2rem, 4.875vw, 4.875rem) clamp(15px, 7.125vw, 7.125rem) max(2.6875vw, 1.4375rem) clamp(15px, 7.125vw, 7.125rem);
     @include max-w($mob-size) {
       padding: 2rem 15px max(2.6875vw, 1.4375rem) 15px;
     }
