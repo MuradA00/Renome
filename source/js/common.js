@@ -77,8 +77,11 @@ const employeesaRow = new Swiper('.empl__list', {
   speed: 500,
   breakpoints: {
     900: {
+      slidesPerView: 3
+    },
+    1366: {
       slidesPerView: 5
-    }
+    },
   },
   // loop: true,
   pagination: {
@@ -103,7 +106,7 @@ const clientRow = new Swiper('.client__list', {
   mousewheelReleaseOnEdges: true,
   breakpoints: {
     500: {
-      spaceBetween: 56
+      spaceBetween: 70
     }
   },
   // loop: true,
@@ -159,15 +162,26 @@ if (menuLinks.length > 0) {
   });
 }
 
-var elem = document.querySelector('.gallery-inner');
-var msnry = new Masonry( elem, {
-  // options
-  itemSelector: '.grid-inner__photo',
-  columnWidth: 200
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
 });
 
-// element argument can be a selector string
-//   for an individual element
-var msnry = new Masonry( '.grid', {
-  // options
-});
+document.addEventListener('DOMContentLoaded', () => {
+
+  const elements = document.querySelectorAll('[data-mask="phone"]') // ищем все поля с атрибутом data-mask="phone"
+  if (!elements) return
+  const phoneOptions = {
+    mask: '+{7}(000)000-00-00' // задаем единственный параметр mask
+  }
+  elements.forEach(el => { // для каждого найденного поля с атрибутом [data-mask="phone"]
+    IMask(el, phoneOptions)
+  })
+
+})

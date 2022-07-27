@@ -12,6 +12,7 @@ body {
   min-height: -webkit-fill-available;
   display: flex;
   flex-direction: column;
+  scroll-behavior: smooth;
 }
 
 .swiper-button-disabled {
@@ -19,7 +20,10 @@ body {
   cursor: default !important;
 }
 
+
+
 html {
+  scroll-padding-top: 5rem;
   box-sizing: border-box;
   width: 100%;
   font-family: var(--font-family);

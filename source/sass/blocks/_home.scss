@@ -1,5 +1,4 @@
 .home {
-  // height: 100vh;
   min-height: 100%;
   min-height: -moz-available;
   min-height: -webkit-fill-available;
@@ -28,7 +27,6 @@
     max-width: 35em;
   }
   &__title {
-    font-style: italic;
     font-size: clamp(1.65rem, 3vw, 3rem);
     font-weight: 300;
     margin-bottom: 21px;
@@ -76,7 +74,7 @@
 
   .home {
     .social {
-      min-width: 8rem;
+      min-width: 100%;
     }
     &__body {
       text-align: center;
@@ -121,9 +119,6 @@
 
 @include max-w($mob-size) {
   .home {
-    &__info {
-
-    }
     &__body {
       grid-gap: 2.8rem;
     }

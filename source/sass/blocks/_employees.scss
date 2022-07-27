@@ -32,6 +32,7 @@
     z-index: 1;
   }
   &__descr {
+    margin-top: 30px;
     padding: 0 1rem;
     @include max-w(37.5em) {
 
@@ -42,8 +43,6 @@
   }
   &__name {
     font-size: clamp(1.25rem, 2vw, 2rem);
-    font-style: italic;
-    font-weight: 300;
   }
   &__role {
     margin-top: 17px;
@@ -51,7 +50,13 @@
     font-size: max(1vw, 0.875rem);
   }
   &__image {
-
+    max-height: 30.75rem;
+    overflow: hidden;
+    width: 100%;
+    img {
+      width: 100%;
+      max-height: 30.75rem;
+    }
   }
 }
 
@@ -64,10 +69,9 @@
       width: 100%;
       height: 30rem;
       @include max-w(28.125em) {
-      height: 18rem;
+      // height: 18rem;
       }
       img {
-        height: 100%;
         width: inherit;
       }
     }

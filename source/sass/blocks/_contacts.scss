@@ -4,7 +4,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   &__information {
-    max-width: 78.25rem;
+    // max-width: 78.25rem;
     margin-inline: auto;
     padding: 0 15px;
   }
@@ -46,8 +46,6 @@
   &__name {
     color: var(--clr-red);
     font-size: max(1.125vw, 1rem);
-    font-style: italic;
-    font-weight: 300;
     line-height: 135%;
     margin-bottom: 8px;
   }

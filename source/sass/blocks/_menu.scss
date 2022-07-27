@@ -28,6 +28,7 @@
   }
   &__navigation {
     height: 100%;
+    overflow-y: scroll;
   }
   &__call {
     display: flex;
@@ -47,7 +48,7 @@
   }
   &__left {
     @include al-flex;
-    grid-gap: 1rem;
+    grid-gap: 1.6875rem;
   }
   &__close {
     cursor: pointer;
@@ -75,10 +76,13 @@
     }
   }
   &__logo {
-    width: max(11.75vw, 8rem);
+    width: max(10vw,7.5625rem);
   }
   &__navigation {
-    margin-left: max(5vw, 1.5rem);
+    margin-left: max(13.15vw, 1.5rem);
+    @include max-w($mob-size) {
+      margin-left: 29px;
+    }
     padding: max(5.375vw, 2.56rem) 0 max(8.93vw, 3rem);
   }
   &__left {
@@ -119,9 +123,10 @@
     &__link {
       font-size: clamp(1.25rem, 2.25vw, 2.25rem);
       color: var(--clr-black);
-      transition: transform 300ms ease-in-out;
+      transition: transform 300ms ease-in-out, color 300ms ease-in-out;
       &:hover {
         transform: translateX(10%);
+        color: var(--clr-red);
       }
     }
   }

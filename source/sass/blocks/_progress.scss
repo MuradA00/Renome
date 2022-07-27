@@ -1,5 +1,6 @@
 .progress {
   padding-bottom: max(5.25vw, 40px);
+  transform: translateY(-25%);
   &__container {
     max-width: 90em;
     margin-inline: auto;
@@ -51,6 +52,7 @@
 
 @include max-w($tab-size) {
   .progress {
+    transform: translateY(-7%);
     &__top,
     .progress__bottom {
       flex-direction: column;

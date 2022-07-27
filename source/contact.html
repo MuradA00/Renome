@@ -84,16 +84,6 @@
               </svg>
             </a></div>
             <div class="social__item"><a href="#" class="social__link">
-              <svg width="23.7" height="23">
-                <use href="img/sprite/sprite.svg#inst-icon"></use>
-              </svg>
-            </a></div>
-            <div class="social__item"><a href="#" class="social__link">
-              <svg width="13" height="24">
-                <use href="img/sprite/sprite.svg#facebook-icon"></use>
-              </svg>
-            </a></div>
-            <div class="social__item"><a href="#" class="social__link">
               <svg width="23" height="20">
                 <use href="img/sprite/sprite.svg#tg-icon"></use>
               </svg>
@@ -170,7 +160,58 @@
         </div>
       </div>
     </div>
-    @@include('_request.html',{})
+    <section class="request">
+      <div class="request__container">
+        <div class="request__body">
+          <div class="request__info">
+            <h2 class="request__heading">
+              Узнайте, как мы решим поставленные задачи
+            </h2>
+            <div class="request__subtitle">
+              Оставьте заявку прямо сейчас <br>
+              и наши сотрудники предоставят Вам консультацию бесплатно!
+            </div>
+            <div class="request__inputs">
+              <div class="request__input-block">
+                <input type="text" placeholder="Ваше имя" class="request__input">
+              </div>
+              <div class="request__input-block">
+                <input type="text" placeholder="Ваш телефон" class="request__input" data-mask="phone">
+              </div>
+            </div>
+            <div class="request__notif">
+              <div class="request__checkbox">
+                <svg width="15" height="15" class="check-icon">
+                  <use href="img/sprite/sprite.svg#check-red"></use>
+                </svg>
+              </div>
+              <div class="request__notif-text">
+                <p>
+                  Отправляя заявку, я соглашаюсь на обработку персональных данных и получение информационных сообщений от Компании Реноме. Оставление заявки Вас ни к чему не обязывает
+                </p>
+              </div>
+            </div>
+            <button class="request__button _default-btn">Получить консультацию</button>
+          </div>
+          <div class="request__image">
+            <picture>
+              <source type='image/webp' srcset='img/employees/5.webp' style="height: 100%; width: 100%;">
+              <img src='img/employees/5.png' alt='request-image'>
+            </picture>
+            <div class="request__name-block">
+              <div class="request__inner">
+                Елена Барышникова <br>
+                <span>
+                  Топ менеджер
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
   </main>
 
   @@include('_modal-quest.html',{})

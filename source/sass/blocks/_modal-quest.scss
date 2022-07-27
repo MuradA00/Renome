@@ -46,6 +46,12 @@
     grid-gap: 11px;
     margin-bottom: max(1.9375vw,  1.1875rem);
   }
+  &__checkbox {
+    svg {
+      fill: transparent;
+    }
+  }
+
   &__btn {
     display: flex;
     justify-content: center;
@@ -96,5 +102,12 @@
       right: 0;
       top: -20px;
     }
+  }
+}
+
+.--check-active {
+  svg {
+    transform: scale(1);
+
   }
 }

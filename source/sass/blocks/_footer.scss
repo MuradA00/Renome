@@ -12,6 +12,7 @@
     display: flex;
     flex-wrap: wrap;
     grid-gap: max(5.2vw, 2rem);
+    justify-content: space-between;
   }
   background-color:
   hsla(0, 0%, 91%, 1);
@@ -19,8 +20,7 @@
     border-bottom: 1px solid hsla(0, 0%, 59%, .43);
     padding-bottom: 13px;
     font-size: max(1vw, .9rem);
-    font-style: italic;
-    font-weight: 300;
+    font-weight: 600;
   }
   ._contact-column {
     max-width: 20.875em;
@@ -53,12 +53,11 @@
     margin-inline: auto;
   }
   .social {
-    margin-left: 33px;
+    margin-left: 7.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 11.5rem;
-    max-width: 11.5rem;
+    min-width: 3rem;
     &__link {
       svg {
         fill: #000;
@@ -73,8 +72,7 @@
     margin-top: 11px;
     color: var(--clr-red);
     font-size: 1rem;
-    font-weight: 300;
-    font-style: italic;
+    font-weight: 600;
   }
   &__btn {
     margin-left: auto;
@@ -96,6 +94,14 @@
   opacity: 0.54;
 }
 
+@include max-w(28.125em) {
+  .footer {
+    &__column {
+      flex: 1 1 50%;
+    }
+  }
+}
+
 @include max-w(78.125em) {
   .footer {
     &__contact {
@@ -112,12 +118,14 @@
       margin-left: 0;
       grid-gap: 2rem;
     }
+    .social {
+      margin-left: 0;
+    }
     &__contact {
       margin-top: 1.5rem;
     }
     &__btn {
       margin-left: 0;
-
     }
   }
 }

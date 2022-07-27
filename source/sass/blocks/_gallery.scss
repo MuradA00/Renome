@@ -21,9 +21,9 @@
     bottom: 20px;
     padding: 0 18px 18px;
     color: var(--clr-white);
-    font-style: italic;
+
     max-width: 25.75rem;
-    font-weight: 300;
+
     font-size: clamp(1rem, 1.5vw, 1.5rem);
     transform: translateY(150%);
     opacity: 0;
@@ -279,9 +279,9 @@
   }
 }
 
-@media only screen and (max-height: 46.25em) {
+@media only screen and (max-height: 50.25em) {
   .fancybox-caption {
-    bottom: 7% !important;
+    bottom: 5% !important;
   }
   .fancybox-button--arrow_left,
   .fancybox-button--arrow_right {
@@ -293,5 +293,11 @@
   .fancybox-button--arrow_left,
   .fancybox-button--arrow_right {
     top: 10% !important;
+  }
+}
+@media only screen and (max-height: 46.875em) {
+  .fancybox-button--arrow_left,
+  .fancybox-button--arrow_right {
+    top: 8% !important;
   }
 }

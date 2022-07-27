@@ -55,14 +55,13 @@
   }
   &__heading {
     font-size: clamp(1.625rem, 2.25vw, 2.25rem);
-    font-style: italic;
-    font-weight: 300;
+    font-weight: 600;
   }
   &__name {
     margin-top: clamp(1.375rem, 3.3125vw, 53px);
     font-size: clamp(1.125rem, 1.5vw, 1.5rem);
     line-height: 200%;
-    font-style: italic;
+
   }
   &__role {
     margin-top: 10px;

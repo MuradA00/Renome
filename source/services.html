@@ -42,7 +42,7 @@
                   Услуги бухгалтера
                   <ul class="hidden-list">
                     <li class="hidden-list__item">
-                      <a href="#" class="hidden-list__link">
+                      <a href="services-inner.html" class="hidden-list__link">
                         Бухгалтерское сопровождение ИП / ООО
                         <img src="img/sprite/arrow-right.svg" alt="arrow-right">
                       </a>
@@ -79,7 +79,58 @@
     </section>
 
     @@include('_menu.html',{})
-    @@include('_request.html',{})
+    <section class="request">
+      <div class="request__container">
+        <div class="request__body">
+          <div class="request__info">
+            <h2 class="request__heading">
+              Узнайте, как мы решим поставленные задачи
+            </h2>
+            <div class="request__subtitle">
+              Оставьте заявку прямо сейчас <br>
+              и наши сотрудники предоставят Вам консультацию бесплатно!
+            </div>
+            <div class="request__inputs">
+              <div class="request__input-block">
+                <input type="text" placeholder="Ваше имя" class="request__input">
+              </div>
+              <div class="request__input-block">
+                <input type="text" placeholder="Ваш телефон" class="request__input" data-mask="phone">
+              </div>
+            </div>
+            <div class="request__notif">
+              <div class="request__checkbox">
+                <svg width="15" height="15" class="check-icon">
+                  <use href="img/sprite/sprite.svg#check-red"></use>
+                </svg>
+              </div>
+              <div class="request__notif-text">
+                <p>
+                  Отправляя заявку, я соглашаюсь на обработку персональных данных и получение информационных сообщений от Компании Реноме. Оставление заявки Вас ни к чему не обязывает
+                </p>
+              </div>
+            </div>
+            <button class="request__button _default-btn">Получить консультацию</button>
+          </div>
+          <div class="request__image">
+            <picture>
+              <source type='image/webp' srcset='img/employees/Юлия Бзеворотных (руководитель отдела сопровождения клиентов) 2.webp' style="height: 100%; width: 100%;">
+              <img src='img/employees/Юлия Бзеворотных (руководитель отдела сопровождения клиентов) 2.png' alt='request-image'>
+            </picture>
+            <div class="request__name-block">
+              <div class="request__inner">
+                Елена Барышникова <br>
+                <span>
+                  Топ менеджер
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     @@include('_modal-quest.html',{})
   </main>
 
@@ -88,6 +139,7 @@
   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
   <script src="js/burger.js"></script>
   <script src="js/checkbox.js"></script>
+  <script src="https://unpkg.com/imask"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/common.js"></script>
 </body>

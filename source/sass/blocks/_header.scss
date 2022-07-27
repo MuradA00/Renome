@@ -16,17 +16,13 @@
     @include al-flex;
     grid-gap: 28px;
   }
-  &__left {
-    grid-gap: .7rem;
-  }
+
   &__call{
     grid-gap: max(2vw, 1rem) !important;
     &:hover .call-icon {
       animation: call-shaking .3s ease-in-out forwards infinite;
     }
-    &:hover .header__number {
-      text-decoration: underline;
-    }
+
   }
   &__call-block {
     background-color: var(--clr-red);
@@ -38,12 +34,13 @@
     align-items: center;
   }
   &__number {
-    font-style: italic;
     font-size: max(1.125vw, .9rem);
-    font-weight: 300;
   }
   &__logo {
-    width: max(11.6875vw, 7.5625rem);
+    width: max(10vw, 7.5625rem);
+    img {
+      width: max(10vw, 7.5625rem);
+    }
   }
 }
 

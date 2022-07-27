@@ -6,8 +6,6 @@
   }
   &__heading {
     font-size: clamp(1.5rem, 2.25vw, 2.25rem);
-    font-weight: 300;
-    font-style: italic;
     max-width: 25.5625rem;
   }
   &__info {
@@ -22,7 +20,7 @@
     font-size: clamp(.875rem, 1vw, 1rem);
   }
   &__inputs {
-    margin-top: 15px;
+    margin-top: 25px;
     display: grid;
     grid-gap: max(1.93vw, 15px);
   }
@@ -73,6 +71,12 @@
   }
   &__image {
     overflow: hidden;
+    height: 100%;
+    img,
+    picture {
+      display: block;
+      height: 100%;
+    }
     @include max-w(70.5em) {
       height: 100%;
     }
@@ -104,8 +108,6 @@
     padding: 24px max(3vw, 1.5rem);
   }
   &__inner {
-    font-weight: 300;
-    font-style: italic;
     font-size: clamp(.875rem, 1.5vw, 1.5rem);
     span {
       font-style: normal;
