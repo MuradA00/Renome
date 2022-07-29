@@ -15,22 +15,22 @@
 // });
 
 
-const myCarousel = new Carousel(document.querySelector(".gallery-inner"), {
-  preload: 1
-  });
+// const myCarousel = new Carousel(document.querySelector(".gallery-inner"), {
+//   preload: 1
+//   });
 
-  Fancybox.assign('[data-fancybox="gallery"]', {
-  closeButton: "top",
-  Carousel: {
-  on: {
-  change: (that) => {
-  myCarousel.slideTo(myCarousel.getPageforSlide(that.page), {
-  friction: 0
-  });
-  }
-  }
-  }
-  });
+//   Fancybox.assign('[data-fancybox="gallery"]', {
+//   closeButton: "top",
+//   Carousel: {
+//   on: {
+//   change: (that) => {
+//   myCarousel.slideTo(myCarousel.getPageforSlide(that.page), {
+//   friction: 0
+//   });
+//   }
+//   }
+//   }
+//   });
 
   // const showMore = document.querySelector('.withdraw__more')
   // const withdrawItemLength = document.querySelectorAll('.withdraw-list__item').length;

@@ -29,7 +29,6 @@ function menuOpen () {
   }
 }
 
-
 const menuMobLinks = document.querySelectorAll('.mob-menu__link');
 
 if (menuMobLinks.length > 0) {

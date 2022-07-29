@@ -34,13 +34,13 @@
     cursor: pointer;
     flex: 0 0 auto;
     padding: 10px 16px 6px 16px;
-    outline: 1px solid var(--clr-red);
+    border: 1px solid var(--clr-red);
     color: var(--clr-red);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    border-radius: 1.1875rem;
+    border-radius: 19px;
     transition: all .2s ease-in-out;
     &:hover {
       background-color: var(--clr-red);
@@ -82,11 +82,13 @@
   &__link-block {
     span {
       color: var(--clr-red);
-      font-weight: 300;
-      font-style: italic;
       font-size: 1.125rem;
     }
+    &:hover img {
+      transform: translateX(10px);
+    }
     img {
+      transition: transform 300ms ease-in-out;
       width: max(7.1875vw, 3.75rem);
     }
     margin-top: 1rem;
@@ -108,14 +110,14 @@
     flex-direction: column;
   }
   &__date {
-    font-style: italic;
+
     margin-top: max(2vw, 1rem);
     font-size: clamp(0.75rem, 1vw, 1rem);
     color: var(--clr-red);
   }
   &__heading {
     font-size: clamp(1.125rem, 1.5vw, 1.5rem);
-    font-style: italic;
+
     font-weight: 300;
     max-width: 28rem;
     margin-top: 9px;
