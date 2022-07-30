@@ -76,11 +76,11 @@ const employeesaRow = new Swiper('.empl__list', {
   slidesPerView: 1,
   speed: 500,
   breakpoints: {
-    900: {
-      slidesPerView: 3
+    500: {
+      slidesPerView: 2,
     },
-    1366: {
-      slidesPerView: 5
+    900: {
+      slidesPerView: 'auto',
     },
   },
   // loop: true,
