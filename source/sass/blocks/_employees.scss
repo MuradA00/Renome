@@ -1,6 +1,7 @@
 .empl {
   &__pagination {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background-color: hsla(211, 100%, 50%, 1);
     padding: clamp( 31px, 9.75vw, 9.75rem) clamp(17px,  6.25vw, 6.25rem) clamp(2rem, 2.5625vw, 2.5625rem);
@@ -9,6 +10,17 @@
     }
     .swiper-button-lock {
       display: block;
+    }
+  }
+  &__heading {
+    @include max-w(37.5em) {
+      margin-right: auto;
+    }
+  }
+  &__buttons {
+    margin-top: 0;
+    @include max-w(37.5em) {
+      margin-top: 3.75rem;
     }
   }
 }

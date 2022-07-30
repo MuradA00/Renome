@@ -3,5 +3,5 @@ var msnry = new Masonry( elem, {
   itemSelector: '.grid-inner__photo',
   columnWidth: 200
 });
-var msnry = new Masonry( '.grid', {
+var msnrySec = new Masonry( '.grid', {
 });
