@@ -1,4 +1,5 @@
 .home {
+  width: 100%;
   min-height: 100%;
   min-height: -moz-available;
   min-height: -webkit-fill-available;
@@ -6,14 +7,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
   color: var(--clr-white);
   position: relative;
+  overflow: hidden;
   &__call {
     display: none;
+  }
+  &__bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
   }
   &__body {
     display: flex;
@@ -155,3 +161,4 @@
     }
   }
 }
+

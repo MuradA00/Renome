@@ -19,7 +19,9 @@
   }
   &__info {
     padding: clamp(2.5rem, 9.625vw, 9.625rem) clamp(.5rem, 4.5375vw, 4.9375rem) clamp(2rem, 6.125vw, 6.125rem);
-    max-width: 45em;
+    // max-width: 45em;
+    width: 100%;
+    background-color: #fff;
   }
   &__name {
     font-size: clamp(1.225rem, 1.5vw, 1.5rem);
