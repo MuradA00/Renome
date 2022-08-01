@@ -13,6 +13,7 @@ window.addEventListener('scroll', function() {
 });
 
 gsap.fromTo('.home', {opacity: 0}, {opacity:1}, {duration: 1, ease: Power4.easeInOout});
-gsap.to('.home__info', {opacity: 1, y: 0, duration: 1, delay: .2, ease: 'Power4.inOut'});
-gsap.to('.home__image', { opacity: 1, y: 0, duration: 1, delay: .8, ease: 'Power4.inOut'});
-gsap.fromTo('.home__bottom', { opacity: 0, y: -50}, {opacity: 1, y: 0, duration: 1, ease: Power4.easeInOut, delay: 1.2})
+// gsap.to('.home__info', {opacity: 1, y: 0, duration: 1, delay: .2, ease: 'Power4.inOut'});
+// gsap.to('.home__image', { opacity: 1, y: 0, duration: 1, delay: .8, ease: 'Power4.inOut'});
+gsap.fromTo('.home__bottom', { opacity: 0, y: -25}, {opacity: 1, y: 0, duration: 1, ease: Power4.easeInOut, delay: 1.1})
+gsap.fromTo('.home__body', { opacity: 0, y: 50}, {opacity: 1, y: 0, duration: 1.5, ease: Power4.easeInOut})
