@@ -5,8 +5,8 @@
     position: relative;
 
     &:hover .hidden-list {
-      display: flex;
       height: 100%;
+      opacity: 1;
       visibility: visible;
       margin-top: max(3.4375vw, 1.3125rem);
       padding-bottom: clamp(1.6875rem, 3.125vw, 3.125rem);
@@ -80,11 +80,12 @@
 .hidden-list {
   visibility: hidden;
   height: 0;
+  opacity: 0;
   margin-left: max(2.5vw, 1.875rem);
   transition: all 400ms ease-in-out;
   flex-direction: column;
   grid-gap: max(2.5625vw, 1.3125rem);
-
+  display: flex;
   position: relative;
 
     &::after {

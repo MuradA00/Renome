@@ -22,6 +22,7 @@
     left: 0;
   }
   &__body {
+
     display: flex;
     justify-content: space-between;
     @include max-w($tab-size) {
@@ -30,6 +31,9 @@
     }
   }
   &__info {
+    transform: translateY(100px);
+    opacity: 0;
+    // clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
     max-width: 35em;
   }
   &__title {
@@ -45,6 +49,9 @@
   }
   &__image {
     padding: 35px 0px 14px;
+    transform: translateY(100px);
+    opacity: 0;
+    // clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
     @include max-w($tab-size) {
       width: max(22.5vw, 12.3rem);
     }

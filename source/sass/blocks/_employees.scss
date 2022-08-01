@@ -26,17 +26,16 @@
 }
 
 .empl-list {
-
   padding-bottom: 20px;
   transition: .2s ease;
-
   &__item {
     // height: 487px;
     position: relative;
     width: 240px !important;
     cursor: pointer;
     opacity: 50%;
-    transition: .2s ease-in-out;
+    overflow: hidden;
+    max-height: 487px;
     &:hover .empl-list__image {
       width: 480px;
       img {
@@ -54,17 +53,17 @@
     }
 
     &:hover {
+      max-height: 100%;
       opacity: 1;
       width: 480px !important;
     }
     &:hover .empl-list__descr {
       opacity: 1;
+      transform: translateY(0);
     }
   }
 
-  ._last-empl-slider {
-    margin-right: 240px;
-  }
+
 
   ._med-image {
     object-position: -340px 50%;
@@ -74,18 +73,20 @@
   }
   .swiper-slide {
     z-index: -1;
-    transition: .3s ease;
+
   }
   .swiper-slide-active {
     z-index: 1;
   }
   &__descr {
     margin-top: 30px;
+    transform: translateY(-130%);
+    opacity: 0;
     padding: 0 1rem;
     @include max-w(37.5em) {
     }
     opacity: 0;
-    transition: .3s ease-in-out;
+    transition: all 300ms ease;
   }
   &__name {
     font-size: clamp(1.25rem, 2vw, 2rem);
@@ -100,10 +101,9 @@
     overflow: hidden;
     width: 240px;
     height: 487px;
-    transition: width 500ms ease-in-out;
+
     img {
-      transition: all 500ms ease;
-      width: 480px;
+      width: 480px;    transition: all 300ms ease;
       max-width: 480px;
       height: 100%;
       object-position: -240px 50%;
@@ -121,6 +121,7 @@
     &__item {
       pointer-events: none;
       height: 100%;
+
       width: 50% !important;
       @include max-w(500px) {
         width: 100% !important;
